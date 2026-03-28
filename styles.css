@@ -430,68 +430,78 @@
     }
 
     /* ── CLIENTS ── */
-    #clientes {
-      background: var(--bg-section);
-    }
+#clientes {
+  background: var(--bg-section);
+}
 
-    .clients-header {
-      text-align: center;
-      margin-bottom: 52px;
-    }
+.clients-header {
+  text-align: center;
+  margin-bottom: 52px;
+}
 
-    .clients-header .section-intro {
-      margin: 12px auto 0;
-      text-align: center;
-    }
+.clients-header .section-intro {
+  margin: 12px auto 0;
+  text-align: center;
+}
 
-    .clients-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 20px;
-      max-width: 900px;
-      margin: 0 auto;
-    }
+.clients-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
 
-    .client-card {
-      background: var(--bg-primary);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 28px 24px;
-      text-align: center;
-      transition: box-shadow .2s, transform .2s, border-color .2s;
-    }
+.client-card {
+  background: var(--bg-primary);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 20px;
+  text-align: center;
+  transition: box-shadow .2s, transform .2s, border-color .2s;
+}
 
-    .client-card:hover {
-      box-shadow: 0 8px 32px rgba(0, 0, 0, .4);
-      transform: translateY(-3px);
-      border-color: var(--border-hover);
-    }
+.client-card:hover {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, .4);
+  transform: translateY(-3px);
+  border-color: var(--border-hover);
+}
 
-    .client-placeholder {
-      height: 50px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+.client-placeholder {
+  background-color: white;
+  border-radius: 10px;
+  padding: 12px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-    .client-placeholder span {
-      display: inline-block;
-      padding: 8px 16px;
-      border: 2px dashed var(--border);
-      border-radius: 8px;
-      font-size: .8rem;
-      color: var(--text-muted);
-      font-weight: 500;
-    }
+.client-logo {
+  max-width: 190px;
+  max-height: 85px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
 
-    .clients-note {
-      text-align: center;
-      margin-top: 32px;
-      font-size: .88rem;
-      color: var(--text-muted);
-      font-style: italic;
-    }
+.client-placeholder span {
+  display: inline-block;
+  padding: 8px 16px;
+  border: 2px dashed var(--border);
+  border-radius: 8px;
+  font-size: .8rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
 
+.clients-note {
+  text-align: center;
+  margin-top: 32px;
+  font-size: .88rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
     /* ── WHY US ── */
     #nosotros {
       background: var(--bg-primary);
@@ -934,22 +944,4 @@
       .hero-stats {
         gap: 24px;
       }
-    }
-
-    .client-placeholder {
-      background-color: white;
-      padding: 15px;
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100px;
-    }
-
-    .client-logo {
-      max-width: 140px;
-      max-height: 60px;
-      width: auto;
-      height: auto;
-      object-fit: contain;
     }
