@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MG Soluciones Tecnológicas S.A.S.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="#" class="nav-logo">
+      <img src="https://i.imgur.com/placeholder.png" alt="MG Logo" id="logo-img" onerror="this.style.display='none'" />
+      MG Soluciones
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#clientes">Clientes</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <a href="#contacto" class="btn-nav">Hablemos →</a>
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-dots"></div>
+    <div class="hero-bg-shape"></div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span></span> Consultoría · Seguridad · Tecnología
+      </div>
+      <h1>Soluciones tech para <em>crecer sin límites</em></h1>
+      <p class="hero-sub">
+        En MG Soluciones Tecnológicas ayudamos a las empresas a transformar
+        su infraestructura digital con consultoría experta, seguridad robusta
+        y soporte confiable.
+      </p>
+      <div class="hero-ctas">
+        <a href="#servicios" class="btn-primary">Ver servicios</a>
+        <a href="#contacto" class="btn-outline">Contactar ahora</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-num">+5</div>
+          <div class="stat-label">Años de experiencia</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">100%</div>
+          <div class="stat-label">Compromiso con el cliente</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">5</div>
+          <div class="stat-label">Líneas de servicio</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section id="servicios">
+    <div class="services-header reveal">
+      <span class="section-label">Lo que hacemos</span>
+      <h2>Nuestros <em>Servicios</em></h2>
+      <p class="section-intro">Ofrecemos soluciones integrales para que su empresa opere con seguridad, eficiencia y tecnología de punta.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <div class="service-icon">🔍</div>
+        <div class="service-title">Consultoría en Tecnología</div>
+        <p class="service-desc">Evaluamos su infraestructura tecnológica y proponemos mejoras orientadas a optimizar el rendimiento, reducir riesgos y mejorar la productividad.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">🔐</div>
+        <div class="service-title">Seguridad de la Información</div>
+        <p class="service-desc">Apoyamos la implementación de controles de seguridad, identificación de riesgos y fortalecimiento de la protección de la información.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">🛠️</div>
+        <div class="service-title">Soporte Técnico Empresarial</div>
+        <p class="service-desc">Brindamos soporte técnico remoto y presencial para garantizar la continuidad de sus operaciones sin interrupciones.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">💻</div>
+        <div class="service-title">Venta de Equipos Tecnológicos</div>
+        <p class="service-desc">Ofrecemos equipos de cómputo, periféricos y soluciones tecnológicas adaptadas a las necesidades específicas de su empresa.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">⚙️</div>
+        <div class="service-title">Software a Medida</div>
+        <p class="service-desc">Optimizamos procesos y creamos software adaptado exactamente a las necesidades de su negocio, desde aplicaciones web hasta sistemas de gestión.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLIENTES -->
+  <section id="clientes">
+    <div class="clients-header reveal">
+      <span class="section-label">Empresas que confían en nosotros</span>
+      <h2>Nuestros <em>Clientes</em></h2>
+      <p class="section-intro">Hemos tenido el honor de acompañar a estas empresas en su transformación digital.</p>
+    </div>
+    <div class="clients-grid reveal">
+      <div class="client-card">
+        <div class="client-placeholder"><span>Logo cliente 1</span></div>
+      </div>
+      <div class="client-card">
+        <div class="client-placeholder"><span>Logo cliente 2</span></div>
+      </div>
+      <div class="client-card">
+        <div class="client-placeholder"><span>Logo cliente 3</span></div>
+      </div>
+      <div class="client-card">
+        <div class="client-placeholder"><span>Logo cliente 4</span></div>
+      </div>
+      <div class="client-card">
+        <div class="client-placeholder"><span>Logo cliente 5</span></div>
+      </div>
+      <div class="client-card">
+        <div class="client-placeholder"><span>Logo cliente 6</span></div>
+      </div>
+    </div>
+    <p class="clients-note reveal">¿Quiere unirse a nuestra lista de clientes satisfechos? <a href="#contacto" style="color:var(--mid-blue); text-decoration:none; font-weight:500;">Contáctenos hoy →</a></p>
+  </section>
+
+  <!-- POR QUÉ NOSOTROS -->
+  <section id="nosotros">
+    <div class="why-inner">
+      <div class="why-visual reveal">
+        <div class="why-card-big">
+          <p>Tecnología que <em>resuelve</em>, no que complica.</p>
+        </div>
+        <div class="why-card-small">
+          <div class="why-card-small-title">Satisfacción garantizada</div>
+          <div class="why-card-small-num">100%</div>
+          <p>Compromiso total con cada proyecto</p>
+        </div>
+      </div>
+      <div class="reveal">
+        <span class="section-label">¿Por qué elegirnos?</span>
+        <h2>Expertos que <em>entienden</em> su negocio</h2>
+        <ul class="why-list">
+          <li class="why-item">
+            <div class="why-check">✓</div>
+            <div class="why-item-text">
+              <strong>Enfoque personalizado</strong>
+              <span>Cada empresa es distinta. Adaptamos las soluciones a su contexto real, no a plantillas genéricas.</span>
+            </div>
+          </li>
+          <li class="why-item">
+            <div class="why-check">✓</div>
+            <div class="why-item-text">
+              <strong>Respuesta ágil</strong>
+              <span>Soporte técnico con tiempos de respuesta rápidos para que su operación no se detenga.</span>
+            </div>
+          </li>
+          <li class="why-item">
+            <div class="why-check">✓</div>
+            <div class="why-item-text">
+              <strong>Equipo calificado</strong>
+              <span>Profesionales certificados con experiencia en consultoría, seguridad y desarrollo de software.</span>
+            </div>
+          </li>
+          <li class="why-item">
+            <div class="why-check">✓</div>
+            <div class="why-item-text">
+              <strong>Relaciones a largo plazo</strong>
+              <span>Nos convertimos en aliados estratégicos, no solo proveedores. Su crecimiento es nuestro éxito.</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto">
+    <div class="contact-inner">
+      <div class="contact-left reveal">
+        <span class="section-label">Hablemos</span>
+        <h2>¿Listo para <em>transformar</em> su empresa?</h2>
+        <p class="section-intro">
+          Cuéntenos su proyecto o necesidad y un experto de nuestro equipo
+          se pondrá en contacto con usted en menos de 24 horas.
+        </p>
+        <div class="contact-info">
+          <div class="contact-info-item">
+            <div class="contact-info-icon">✉️</div>
+            <a href="mailto:iamartinezg@mgserviciosti.com">iamartinezg@mgserviciosti.com</a>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon">🌐</div>
+            <span style="color:rgba(255,255,255,.75); font-size:.95rem;">MG Soluciones Tecnológicas S.A.S.</span>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon">📍</div>
+            <span style="color:rgba(255,255,255,.75); font-size:.95rem;">Colombia</span>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form reveal">
+        <h3>Envíenos un mensaje</h3>
+        <div id="formContent">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Nombre</label>
+              <input type="text" id="fname" placeholder="Su nombre" />
+            </div>
+            <div class="form-group">
+              <label>Empresa</label>
+              <input type="text" id="fcompany" placeholder="Nombre de la empresa" />
+            </div>
+          </div>
+          <div class="form-row" style="margin-top:14px;">
+            <div class="form-group">
+              <label>Correo electrónico</label>
+              <input type="email" id="femail" placeholder="correo@empresa.com" />
+            </div>
+            <div class="form-group">
+              <label>Teléfono</label>
+              <input type="tel" id="fphone" placeholder="+57 300 000 0000" />
+            </div>
+          </div>
+          <div class="form-row" style="margin-top:14px;">
+            <div class="form-group full">
+              <label>Servicio de interés</label>
+              <select id="fservice">
+                <option value="">Seleccione un servicio…</option>
+                <option>Consultoría en Tecnología</option>
+                <option>Seguridad de la Información</option>
+                <option>Soporte Técnico Empresarial</option>
+                <option>Venta de Equipos Tecnológicos</option>
+                <option>Software a Medida</option>
+                <option>Otro / Varios</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row" style="margin-top:14px;">
+            <div class="form-group full">
+              <label>Mensaje</label>
+              <textarea id="fmsg" placeholder="Cuéntenos brevemente su necesidad o proyecto…"></textarea>
+            </div>
+          </div>
+          <button class="form-submit" onclick="submitForm()">Enviar mensaje →</button>
+        </div>
+        <div class="form-success" id="formSuccess">
+          <div class="checkmark">✅</div>
+          <strong>¡Mensaje recibido!</strong>
+          <p>Gracias por contactarnos. Un asesor se comunicará con usted pronto.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">MG Soluciones Tecnológicas S.A.S.</div>
+    <p>© 2026 — Todos los derechos reservados</p>
+    <p>Contacto: <a href="mailto:iamartinezg@mgserviciosti.com">iamartinezg@mgserviciosti.com</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
