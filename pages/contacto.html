@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto — MG Soluciones Tecnológicas</title>
+  <meta name="description" content="Contáctenos para recibir asesoría tecnológica personalizada. Teléfono, correo, WhatsApp y formulario de contacto." />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="icon" type="image/png" href="../images/logo.png" />
+  <style>
+    .faq-layout {
+      display: grid;
+      grid-template-columns: 1fr 1.4fr;
+      gap: 72px;
+      align-items: start;
+    }
+    @media (max-width: 860px) {
+      .faq-layout { grid-template-columns: 1fr; gap: 36px; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <div class="header-inner">
+      <a href="../index.html" class="logo"><img src="../images/logo.png" alt="MG Soluciones Tecnológicas" /></a>
+      <nav class="nav-links">
+        <a href="../index.html">Inicio</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="marcas.html">Marcas</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="blog.html">Blog</a>
+        <a href="contacto.html" class="active">Contacto</a>
+      </nav>
+      <a href="contacto.html" class="btn btn-primary nav-cta">Cotizar</a>
+      <button class="hamburger" aria-label="Menú" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobile-nav">
+    <a href="../index.html">Inicio</a><a href="servicios.html">Servicios</a><a href="marcas.html">Marcas</a>
+    <a href="nosotros.html">Nosotros</a><a href="blog.html">Blog</a><a href="contacto.html">Contacto</a>
+    <a href="contacto.html" class="btn btn-primary">Solicitar Cotización</a>
+  </nav>
+</header>
+
+<div class="page-hero">
+  <div class="container">
+    <div class="page-hero-inner">
+      <div class="breadcrumb"><a href="../index.html">Inicio</a><span>/</span><span style="color:rgba(255,255,255,.6);">Contacto</span></div>
+      <span class="page-hero-eyebrow">Hablemos</span>
+      <h1 class="page-hero-title">Estamos listos para ayudarle.</h1>
+      <p class="page-hero-sub">Cuéntenos sobre su necesidad y uno de nuestros especialistas se comunicará con usted a la brevedad.</p>
+    </div>
+  </div>
+</div>
+
+<!-- CONTACTO PRINCIPAL -->
+<section class="section">
+  <div class="container">
+    <div class="contact-layout">
+
+      <!-- Info -->
+      <div>
+        <span class="eyebrow">Información de contacto</span>
+        <h2 class="headline-md" style="font-size:1.7rem;">Estamos a su disposición.</h2>
+        <p class="body-md" style="margin-bottom:8px;">Seleccione el canal que prefiera. Respondemos en menos de 24 horas hábiles.</p>
+
+        <div class="contact-info-item">
+          <div class="contact-info-icon">📞</div>
+          <div>
+            <h4>Teléfono</h4>
+            <p><a href="tel:+57XXXXXXXXXX" style="color:var(--apple-muted);">+57 (XXX) XXX-XXXX</a></p>
+            <p style="font-size:.78rem;margin-top:2px;">Lun – Vie · 8:00 am – 6:00 pm</p>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon">✉️</div>
+          <div>
+            <h4>Correo electrónico</h4>
+            <p><a href="mailto:info@mgsoluciones.com" style="color:var(--apple-muted);">info@mgsoluciones.com</a></p>
+            <p style="font-size:.78rem;margin-top:2px;">Respondemos en menos de 24 horas</p>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon">💬</div>
+          <div>
+            <h4>WhatsApp</h4>
+            <p><a href="https://wa.me/57XXXXXXXXXX" target="_blank" style="color:var(--apple-muted);">+57 (XXX) XXX-XXXX</a></p>
+            <p style="font-size:.78rem;margin-top:2px;">Atención ágil por mensaje directo</p>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon">📍</div>
+          <div>
+            <h4>Ubicación</h4>
+            <p>Bogotá, Colombia</p>
+            <p style="font-size:.78rem;margin-top:2px;">Atención presencial con cita previa</p>
+          </div>
+        </div>
+
+        <!-- Mapa placeholder -->
+        <div class="map-placeholder">
+          <span class="map-placeholder-icon">📍</span>
+          <p style="font-size:.82rem;">Reemplazar con iframe de Google Maps</p>
+        </div>
+      </div>
+
+      <!-- Formulario -->
+      <div class="contact-form-card">
+        <span class="eyebrow">Formulario de contacto</span>
+        <h3 style="font-size:1.2rem;font-weight:700;color:var(--apple-dark);letter-spacing:-.4px;margin-bottom:6px;">Solicite una asesoría.</h3>
+        <p class="body-md" style="margin-bottom:24px;">Complete el formulario y un especialista se comunicará con usted en menos de 24 horas.</p>
+
+        <div class="success-message" id="successMsg">✅ ¡Mensaje enviado! Nos comunicaremos con usted pronto.</div>
+
+        <form id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nombre">Nombre completo *</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Juan García" required />
+            </div>
+            <div class="form-group">
+              <label for="empresa">Empresa</label>
+              <input type="text" id="empresa" name="empresa" placeholder="Mi Empresa S.A.S." />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Correo electrónico *</label>
+              <input type="email" id="email" name="email" placeholder="juan@empresa.com" required />
+            </div>
+            <div class="form-group">
+              <label for="telefono">Teléfono / WhatsApp</label>
+              <input type="tel" id="telefono" name="telefono" placeholder="+57 300 000 0000" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="servicio">Servicio de interés</label>
+            <select id="servicio" name="servicio">
+              <option value="" disabled selected>Seleccione una opción…</option>
+              <option>Consultoría TI</option>
+              <option>Ciberseguridad</option>
+              <option>Infraestructura Tecnológica</option>
+              <option>Soporte y Mantenimiento</option>
+              <option>Venta de Hardware y Software</option>
+              <option>Cloud y Backup</option>
+              <option>Otro / No estoy seguro</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="empleados">Tamaño de la empresa</label>
+            <select id="empleados" name="empleados">
+              <option value="" disabled selected>Número de empleados…</option>
+              <option>1 – 10 empleados</option>
+              <option>11 – 50 empleados</option>
+              <option>51 – 200 empleados</option>
+              <option>Más de 200 empleados</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Cuéntenos su necesidad *</label>
+            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Describa brevemente qué necesita o el problema que desea resolver…" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg form-submit">
+            Enviar Solicitud
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+          <p style="font-size:.74rem;color:var(--apple-muted);text-align:center;margin-top:14px;font-weight:300;">
+            Al enviar, acepta nuestra <a href="#" style="color:var(--apple-blue);">Política de Privacidad</a>. Sus datos no serán compartidos con terceros.
+          </p>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section bg-gray">
+  <div class="container">
+    <div class="faq-layout">
+      <div>
+        <span class="eyebrow">Preguntas frecuentes</span>
+        <h2 class="headline-md">¿Tiene alguna duda?</h2>
+        <p class="body-md" style="margin-bottom:28px;">Estas son las preguntas que más nos hacen nuestros clientes. Si no encuentra su respuesta, escríbanos directamente.</p>
+        <a href="https://wa.me/57XXXXXXXXXX" target="_blank" class="btn btn-primary">Preguntar por WhatsApp</a>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-question">¿Cuánto tiempo tarda una implementación? <span class="faq-arrow">▼</span></div>
+          <div class="faq-answer">El tiempo varía según el alcance. Un diagnóstico tecnológico puede completarse en 1–2 semanas, mientras que proyectos de infraestructura complejos pueden tomar de 4 a 12 semanas. En la reunión inicial le entregamos un cronograma estimado.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">¿Trabajan con empresas de cualquier tamaño? <span class="faq-arrow">▼</span></div>
+          <div class="faq-answer">Sí. Hemos trabajado con pequeñas empresas de 5 empleados hasta organizaciones de más de 500. Nuestras soluciones son escalables y se adaptan al presupuesto y necesidades de cada organización.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">¿Ofrecen soporte post-implementación? <span class="faq-arrow">▼</span></div>
+          <div class="faq-answer">Absolutamente. Contamos con planes de soporte técnico mensual que incluyen mesa de ayuda, soporte remoto y visitas en sitio. No desaparecemos tras finalizar el proyecto.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">¿Cómo es el proceso para solicitar una cotización? <span class="faq-arrow">▼</span></div>
+          <div class="faq-answer">Complete el formulario o escríbanos por WhatsApp. Un especialista se comunicará para entender su necesidad, programar una reunión y enviarle una propuesta personalizada sin costo.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">¿Trabajan solo en Bogotá? <span class="faq-arrow">▼</span></div>
+          <div class="faq-answer">Aunque nuestra oficina está en Bogotá, prestamos servicios a nivel nacional. Muchos servicios se gestionan remotamente y para proyectos que requieren presencia en sitio en otras ciudades, lo coordinamos con anticipación.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><div class="footer-logo"><img src="../images/logo.png" alt="MG Soluciones Tecnológicas" /></div><p class="footer-desc">Empresa colombiana especializada en consultoría, infraestructura tecnológica, ciberseguridad y soporte para empresas.</p><div class="footer-social"><a href="#" class="social-link">in</a><a href="#" class="social-link">f</a><a href="#" class="social-link">ig</a></div></div>
+      <div class="footer-col"><h5>Servicios</h5><ul><li><a href="servicios.html#consultoria">Consultoría TI</a></li><li><a href="servicios.html#ciberseguridad">Ciberseguridad</a></li><li><a href="servicios.html#infraestructura">Infraestructura</a></li><li><a href="servicios.html#soporte">Soporte</a></li><li><a href="servicios.html#cloud">Cloud y Backup</a></li></ul></div>
+      <div class="footer-col"><h5>Empresa</h5><ul><li><a href="nosotros.html">Quiénes Somos</a></li><li><a href="marcas.html">Marcas</a></li><li><a href="blog.html">Blog</a></li><li><a href="contacto.html">Contacto</a></li></ul></div>
+      <div class="footer-col"><h5>Contacto</h5><ul><li><a href="tel:+57XXXXXXXXXX">+57 (XXX) XXX-XXXX</a></li><li><a href="mailto:info@mgsoluciones.com">info@mgsoluciones.com</a></li><li><a href="#">Bogotá, Colombia</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>© 2025 MG Soluciones Tecnológicas. Todos los derechos reservados.</p><div class="footer-bottom-links"><a href="#">Política de Privacidad</a><a href="#">Términos y Condiciones</a></div></div>
+  </div>
+</footer>
+<a href="https://wa.me/57XXXXXXXXXX" target="_blank" rel="noopener" class="whatsapp-float" aria-label="WhatsApp"><span class="whatsapp-tooltip">¡Escríbenos!</span><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
+<script src="../js/main.js"></script>
+<script>
+  document.querySelectorAll('.faq-question').forEach(q => {
+    q.addEventListener('click', () => {
+      const item = q.parentElement;
+      const wasOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      if (!wasOpen) item.classList.add('open');
+    });
+  });
+</script>
+</body>
+</html>
