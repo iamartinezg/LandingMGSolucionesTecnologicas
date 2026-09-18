@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+<defs>
+<linearGradient id="g4" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0%" stop-color="#0071e3"/><stop offset="100%" stop-color="#062a52"/>
+</linearGradient>
+<pattern id="gridg4" width="40" height="40" patternUnits="userSpaceOnUse">
+<path d="M40 0 H0 V40" fill="none" stroke="#ffffff" stroke-opacity=".05" stroke-width="1"/>
+</pattern>
+</defs>
+<rect width="800" height="450" fill="url(#g4)"/>
+<rect width="800" height="450" fill="url(#gridg4)"/>
+
+<g transform="translate(400,215)">
+  <path d="M-120 34 a62 62 0 0 1 22-120 a78 78 0 0 1 146 22 a54 54 0 0 1-8 106 H-104 a48 48 0 0 1-16-8 z"
+        fill="#ffffff" opacity=".93"/>
+  <g transform="translate(0,30)">
+    <rect x="-96" y="22" width="192" height="30" rx="7" fill="#0071e3"/>
+    <rect x="-96" y="62" width="192" height="30" rx="7" fill="#0071e3" opacity=".75"/>
+    <circle cx="-74" cy="37" r="5" fill="#fff"/><circle cx="-74" cy="77" r="5" fill="#fff"/>
+    <path d="M-40 37 H62 M-40 77 H62" stroke="#fff" stroke-width="3" opacity=".6" stroke-linecap="round"/>
+  </g>
+  <path d="M-60 -6 V-46 M0 -6 V-56 M60 -6 V-46" stroke="#0071e3" stroke-width="5" stroke-linecap="round" opacity=".5"/>
+</g>
+</svg>

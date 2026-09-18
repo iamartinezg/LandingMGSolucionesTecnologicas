@@ -1,298 +1,367 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MG Soluciones Tecnológicas — Tecnología que impulsa su negocio</title>
-  <meta name="description" content="Consultoría TI, ciberseguridad, infraestructura y soporte para empresas colombianas. Soluciones integrales con fabricantes líderes." />
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="icon" type="image/png" href="images/logo.png" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MG Soluciones Tecnológicas — Tecnología que impulsa su crecimiento</title>
+<meta name="description" content="Consultoría TI, ciberseguridad, infraestructura, soporte y cloud para empresas en Colombia. Asesoría especializada, implementación y soporte continuo.">
+<meta name="theme-color" content="#0B1F35">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MG Soluciones Tecnológicas">
+<meta property="og:title" content="MG Soluciones Tecnológicas — Tecnología que impulsa su crecimiento">
+<meta property="og:description" content="Consultoría TI, ciberseguridad, infraestructura, soporte y cloud para empresas en Colombia. Asesoría especializada, implementación y soporte continuo.">
+<meta property="og:locale" content="es_CO">
+<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Saltar al contenido</a>
 <header class="site-header">
   <div class="container">
     <div class="header-inner">
-      <a href="index.html" class="logo"><img src="images/logo.png" alt="MG Soluciones Tecnológicas" /></a>
-      <nav class="nav-links">
-        <a href="index.html" class="active">Inicio</a>
-        <a href="pages/servicios.html">Servicios</a>
-        <a href="pages/marcas.html">Marcas</a>
-        <a href="pages/nosotros.html">Nosotros</a>
-        <a href="pages/blog.html">Blog</a>
-        <a href="pages/contacto.html">Contacto</a>
+      <a class="brand" href="index.html" aria-label="MG Soluciones Tecnológicas, ir al inicio">
+        <img src="images/logo.png" alt="MG Soluciones Tecnológicas" width="300" height="86">
+      </a>
+      <nav class="nav" aria-label="Navegación principal">
+      <a href="index.html" aria-current="page">Inicio</a>
+      <a href="pages/servicios.html">Servicios</a>
+      <a href="pages/marcas.html">Marcas</a>
+      <a href="pages/nosotros.html">Nosotros</a>
+      <a href="pages/blog.html">Blog</a>
+      <a href="pages/contacto.html">Contacto</a>
       </nav>
-      <a href="pages/contacto.html" class="btn btn-primary nav-cta">Cotizar</a>
-      <button class="hamburger" aria-label="Menú" aria-expanded="false">
+      <a class="btn btn--primary nav-cta" href="pages/contacto.html">Cotizar</a>
+      <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menuMovil">
         <span></span><span></span><span></span>
       </button>
     </div>
   </div>
-  <nav class="mobile-nav">
-    <a href="index.html">Inicio</a>
-    <a href="pages/servicios.html">Servicios</a>
-    <a href="pages/marcas.html">Marcas</a>
-    <a href="pages/nosotros.html">Nosotros</a>
-    <a href="pages/blog.html">Blog</a>
-    <a href="pages/contacto.html">Contacto</a>
-    <a href="pages/contacto.html" class="btn btn-primary">Solicitar Cotización</a>
-  </nav>
 </header>
+<nav class="nav-mobile" id="menuMovil" aria-label="Navegación móvil">
+  <a href="index.html" aria-current="page">Inicio</a>
+      <a href="pages/servicios.html">Servicios</a>
+      <a href="pages/marcas.html">Marcas</a>
+      <a href="pages/nosotros.html">Nosotros</a>
+      <a href="pages/blog.html">Blog</a>
+      <a href="pages/contacto.html">Contacto</a>
+  <a class="btn btn--primary" href="pages/contacto.html">Solicitar Cotización</a>
+</nav>
+<main id="main">
 
-<!-- ── HERO ── -->
 <section class="hero">
   <div class="container">
     <div class="hero-inner">
-      <div class="hero-content">
-        <span class="eyebrow">Empresa colombiana de tecnología</span>
-        <h1 class="hero-title">Tecnología que impulsa su <span class="accent">negocio.</span></h1>
-        <p class="hero-sub">Ayudamos a las organizaciones a optimizar su infraestructura, fortalecer su ciberseguridad y garantizar la continuidad de sus operaciones.</p>
+
+      <div class="hero-copy">
+        <span class="eyebrow eyebrow--muted">Empresa colombiana de tecnología</span>
+        <h1 class="h-xl hero-title">Tecnología que impulsa su <em>crecimiento.</em></h1>
+        <p class="hero-text">Ayudamos a las organizaciones a optimizar su infraestructura, fortalecer su ciberseguridad y garantizar la continuidad de sus operaciones.</p>
         <div class="hero-actions">
-          <a href="pages/contacto.html" class="btn btn-primary btn-lg">Solicitar Asesoría</a>
-          <a href="pages/servicios.html" class="btn btn-ghost btn-lg">Ver Servicios →</a>
+          <a class="btn btn--primary btn--lg" href="pages/contacto.html">Solicitar Asesoría</a>
+          <a class="btn btn--outline-light btn--lg" href="pages/servicios.html">Ver Servicios</a>
         </div>
-        <div class="hero-badges">
-          <span class="hero-badge">Asesoría especializada</span>
-          <span class="hero-badge">Implementación</span>
-          <span class="hero-badge">Soporte continuo</span>
-        </div>
+        <ul class="hero-tags">
+          <li class="hero-tag">Asesoría especializada</li>
+          <li class="hero-tag">Implementación</li>
+          <li class="hero-tag">Soporte continuo</li>
+        </ul>
       </div>
-      <div class="hero-visual">
-        <div class="hero-card-apple">
-          <div class="card-icon-apple">
-            <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          </div>
-          <h3>Protección integral</h3>
+
+      <div class="hero-figure">
+        <div class="hero-card">
+          <div class="hero-card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <h2>Protección integral</h2>
           <p>Ciberseguridad y continuidad del negocio</p>
-          <div class="hero-stats">
-            <div class="hero-stat-item"><div class="hero-stat-num">+50</div><div class="hero-stat-lbl">Clientes activos</div></div>
-            <div class="hero-stat-item"><div class="hero-stat-num">+8</div><div class="hero-stat-lbl">Años de exp.</div></div>
-            <div class="hero-stat-item"><div class="hero-stat-num">99%</div><div class="hero-stat-lbl">Satisfacción</div></div>
-          </div>
+          <dl class="stat-row">
+            <div class="stat"><dt class="stat__label">Años</dt><dd class="stat__num">2+</dd></div>
+            <div class="stat"><dt class="stat__label">Clientes</dt><dd class="stat__num">10+</dd></div>
+            <div class="stat"><dt class="stat__label">Proyectos</dt><dd class="stat__num">5+</dd></div>
+          </dl>
         </div>
       </div>
+
     </div>
   </div>
 </section>
 
-<!-- ── SERVICIOS ── -->
 <section class="section bg-white">
   <div class="container">
-    <div class="section-header text-center">
+    <div class="section-head center">
       <span class="eyebrow">Lo que hacemos</span>
-      <h2 class="headline-lg">Soluciones para cada necesidad.</h2>
-      <p class="body-lg">Desde la consultoría y planeación hasta la implementación y soporte continuo de sus plataformas tecnológicas.</p>
+      <h2 class="h-lg">Soluciones para cada necesidad.</h2>
+      <p class="lead">Desde la consultoría y la planeación hasta la implementación y el soporte continuo de sus plataformas tecnológicas.</p>
     </div>
-    <div class="services-grid">
-      <div class="service-card">
-        <div class="service-icon-apple"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg></div>
+    <div class="grid-3">
+      <article class="card">
+        <div class="card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg></div>
         <h3>Consultoría TI</h3>
         <p>Evaluamos su infraestructura y diseñamos estrategias que alinean la tecnología con sus objetivos de negocio.</p>
-        <a href="pages/servicios.html#consultoria" class="service-link">Saber más →</a>
-      </div>
-      <div class="service-card">
-        <div class="service-icon-apple"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <a class="link-arrow" href="pages/servicios.html#consultoria">Saber más</a>
+      </article>
+      <article class="card">
+        <div class="card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
         <h3>Ciberseguridad</h3>
-        <p>Protegemos sus activos digitales con soluciones preventivas que minimizan vulnerabilidades y reducen el impacto de amenazas.</p>
-        <a href="pages/servicios.html#ciberseguridad" class="service-link">Saber más →</a>
-      </div>
-      <div class="service-card">
-        <div class="service-icon-apple"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><path d="M6 6h.01M6 18h.01"/></svg></div>
+        <p>Protegemos sus activos digitales con soluciones preventivas que reducen vulnerabilidades y el impacto de amenazas.</p>
+        <a class="link-arrow" href="pages/servicios.html#ciberseguridad">Saber más</a>
+      </article>
+      <article class="card">
+        <div class="card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><path d="M6 6h.01M6 18h.01"/></svg></div>
         <h3>Infraestructura</h3>
         <p>Diseñamos y administramos plataformas robustas que garantizan disponibilidad, rendimiento y escalabilidad.</p>
-        <a href="pages/servicios.html#infraestructura" class="service-link">Saber más →</a>
-      </div>
-      <div class="service-card">
-        <div class="service-icon-apple"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
-        <h3>Soporte y Mantenimiento</h3>
+        <a class="link-arrow" href="pages/servicios.html#infraestructura">Saber más</a>
+      </article>
+      <article class="card">
+        <div class="card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
+        <h3>Soporte y mantenimiento</h3>
         <p>Soporte técnico especializado y mantenimiento preventivo para garantizar la continuidad de sus sistemas.</p>
-        <a href="pages/servicios.html#soporte" class="service-link">Saber más →</a>
-      </div>
-      <div class="service-card">
-        <div class="service-icon-apple"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
-        <h3>Hardware y Software</h3>
+        <a class="link-arrow" href="pages/servicios.html#soporte">Saber más</a>
+      </article>
+      <article class="card">
+        <div class="card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+        <h3>Hardware y software</h3>
         <p>Equipos, licencias y soluciones de fabricantes líderes con asesoría especializada para cada organización.</p>
-        <a href="pages/servicios.html#hardware" class="service-link">Saber más →</a>
-      </div>
-      <div class="service-card">
-        <div class="service-icon-apple"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
-        <h3>Cloud y Backup</h3>
-        <p>Soluciones de nube, respaldo y recuperación que protegen sus datos críticos y garantizan la continuidad del negocio.</p>
-        <a href="pages/servicios.html#cloud" class="service-link">Saber más →</a>
-      </div>
+        <a class="link-arrow" href="pages/servicios.html#hardware">Saber más</a>
+      </article>
+      <article class="card">
+        <div class="card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg></div>
+        <h3>Cloud y backup</h3>
+        <p>Soluciones de nube, respaldo y recuperación que protegen sus datos críticos y aseguran la continuidad del negocio.</p>
+        <a class="link-arrow" href="pages/servicios.html#cloud">Saber más</a>
+      </article>
     </div>
   </div>
 </section>
 
-<!-- ── STATS DARK ── -->
 <section class="section bg-navy">
   <div class="container">
-    <div class="text-center" style="margin-bottom:56px;">
-      <span class="eyebrow" style="color:var(--apple-blue);">Nuestra trayectoria</span>
-      <h2 class="headline-lg" style="color:#f5f5f7;">Números que nos respaldan.</h2>
-      <p class="body-lg" style="color:rgba(255,255,255,.45);">Más de una década acompañando a las organizaciones más exigentes del país.</p>
+    <div class="section-head center on-dark">
+      <span class="eyebrow eyebrow--light">Nuestra trayectoria</span>
+      <h2 class="h-lg on-dark">Números que nos respaldan.</h2>
+      <p class="lead">Una empresa joven, ágil y comprometida con el resultado de cada cliente.</p>
     </div>
-    <div class="dark-stats-grid">
-      <div class="dark-stat-card"><div class="dark-stat-num">+8</div><div class="dark-stat-lbl">Años de experiencia</div></div>
-      <div class="dark-stat-card"><div class="dark-stat-num">+50</div><div class="dark-stat-lbl">Clientes activos</div></div>
-      <div class="dark-stat-card"><div class="dark-stat-num">+100</div><div class="dark-stat-lbl">Proyectos exitosos</div></div>
-      <div class="dark-stat-card"><div class="dark-stat-num">99%</div><div class="dark-stat-lbl">Satisfacción</div></div>
-    </div>
+    <dl class="stats-grid">
+      <div class="stat-card"><dd class="stat-card__num">2+</dd><dt class="stat-card__label">Años de experiencia</dt></div>
+      <div class="stat-card"><dd class="stat-card__num">10+</dd><dt class="stat-card__label">Clientes atendidos</dt></div>
+      <div class="stat-card"><dd class="stat-card__num">5+</dd><dt class="stat-card__label">Proyectos entregados</dt></div>
+      <div class="stat-card"><dd class="stat-card__num">6</dd><dt class="stat-card__label">Líneas de servicio</dt></div>
+    </dl>
   </div>
 </section>
 
-<!-- ── POR QUÉ MG ── -->
-<section class="section">
+<section class="section bg-white">
   <div class="container">
-    <div class="why-layout">
-      <div class="why-visual-apple">
-        <span class="eyebrow">Aliados estratégicos</span>
-        <h2 class="headline-md">Tecnología con enfoque humano.</h2>
-        <p class="body-md">Entendemos que la tecnología es un activo estratégico. Por eso trabajamos de manera cercana con cada cliente.</p>
-        <div class="why-sub-stats">
-          <div class="why-sub-stat"><div class="why-sub-num">+50</div><div class="why-sub-lbl">Clientes activos</div></div>
-          <div class="why-sub-stat"><div class="why-sub-num">+8</div><div class="why-sub-lbl">Años de exp.</div></div>
-          <div class="why-sub-stat"><div class="why-sub-num">+100</div><div class="why-sub-lbl">Proyectos</div></div>
-          <div class="why-sub-stat"><div class="why-sub-num">6</div><div class="why-sub-lbl">Servicios</div></div>
-        </div>
+    <div class="split">
+      <div class="split__panel">
+        <span class="eyebrow eyebrow--light">Aliados estratégicos</span>
+        <h2 class="h-md on-dark">Tecnología con enfoque humano.</h2>
+        <p class="body" style="color:rgba(255,255,255,.55)">Entendemos que la tecnología es un activo estratégico. Por eso trabajamos de forma cercana con cada cliente, entendiendo su operación antes de proponer una solución.</p>
+        <dl class="panel-stats">
+          <div class="panel-stat"><dd class="panel-stat__num">2+</dd><dt class="panel-stat__label">Años</dt></div>
+          <div class="panel-stat"><dd class="panel-stat__num">10+</dd><dt class="panel-stat__label">Clientes</dt></div>
+          <div class="panel-stat"><dd class="panel-stat__num">5+</dd><dt class="panel-stat__label">Proyectos</dt></div>
+          <div class="panel-stat"><dd class="panel-stat__num">6</dd><dt class="panel-stat__label">Servicios</dt></div>
+        </dl>
       </div>
       <div>
-        <span class="eyebrow">¿Por qué elegir MG?</span>
-        <h2 class="headline-md">Su aliado tecnológico de confianza.</h2>
-        <p class="body-md" style="margin-bottom:32px;">Más que proveedores, somos su partner estratégico en tecnología. Combinamos experiencia técnica con un servicio cercano y personalizado.</p>
-        <div class="features-list">
-          <div class="feature-row"><div class="feature-icon-sm">🎯</div><div><h4>Atención personalizada</h4><p>Cada cliente recibe un acompañamiento dedicado y soluciones a su medida.</p></div></div>
-          <div class="feature-row"><div class="feature-icon-sm">⚡</div><div><h4>Respuesta ágil y efectiva</h4><p>Tiempos de respuesta rápidos para minimizar el impacto en su operación.</p></div></div>
-          <div class="feature-row"><div class="feature-icon-sm">📈</div><div><h4>Soluciones escalables</h4><p>Tecnología que crece con su empresa, adaptándose a cada etapa.</p></div></div>
-          <div class="feature-row"><div class="feature-icon-sm">🏢</div><div><h4>Experiencia multisectorial</h4><p>Hemos trabajado con empresas de múltiples industrias y tamaños.</p></div></div>
-          <div class="feature-row"><div class="feature-icon-sm">🤝</div><div><h4>Acompañamiento permanente</h4><p>No desaparecemos tras la implementación. Estamos con usted en cada etapa.</p></div></div>
+        <span class="eyebrow">Por qué elegirnos</span>
+        <h2 class="h-md">Su aliado tecnológico de confianza.</h2>
+        <p class="body" style="margin-bottom:26px">Más que proveedores, somos su partner estratégico. Combinamos experiencia técnica con un servicio cercano y personalizado.</p>
+        <div class="feature-list">
+        <div class="feature">
+          <div class="feature__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 7v5l3 2"/></svg></div>
+          <div><h3>Atención personalizada</h3><p>Cada cliente recibe acompañamiento dedicado y soluciones a su medida.</p></div>
+        </div>
+        <div class="feature">
+          <div class="feature__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+          <div><h3>Respuesta ágil y efectiva</h3><p>Tiempos de respuesta cortos para minimizar el impacto en su operación.</p></div>
+        </div>
+        <div class="feature">
+          <div class="feature__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg></div>
+          <div><h3>Soluciones escalables</h3><p>Tecnología que crece con su empresa y se adapta a cada etapa.</p></div>
+        </div>
+        <div class="feature">
+          <div class="feature__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+          <div><h3>Experiencia multisectorial</h3><p>Hemos trabajado con organizaciones de distintas industrias y tamaños.</p></div>
+        </div>
+        <div class="feature">
+          <div class="feature__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+          <div><h3>Acompañamiento permanente</h3><p>No desaparecemos tras la implementación: estamos en cada etapa.</p></div>
+        </div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ── MARCAS ── -->
 <section class="section bg-gray">
   <div class="container">
-    <div class="section-header text-center">
+    <div class="section-head center">
       <span class="eyebrow">Fabricantes</span>
-      <h2 class="headline-lg">Marcas con las que trabajamos.</h2>
-      <p class="body-lg">Trabajamos con fabricantes reconocidos a nivel mundial para ofrecer soluciones confiables y alineadas con los más altos estándares de la industria.</p>
+      <h2 class="h-lg">Marcas con las que trabajamos.</h2>
+      <p class="lead">Operamos con fabricantes reconocidos a nivel mundial para ofrecer soluciones confiables y alineadas con los estándares más exigentes de la industria.</p>
     </div>
-    <div class="brands-categories">
-      <div>
-        <p class="brand-category-label">Hardware</p>
-        <div class="brands-row">
-          <div class="brand-card"><div class="brand-logo-placeholder"><img src="images/brands/lenovo.png" alt="Lenovo" onerror="this.parentElement.innerHTML='<b style=\'font-size:.75rem;color:var(--apple-muted);\'>LENOVO</b>'"/></div><span class="brand-name">Lenovo</span></div>
-          <div class="brand-card"><div class="brand-logo-placeholder"><img src="images/brands/hp.png" alt="HP" onerror="this.parentElement.innerHTML='<b style=\'font-size:.75rem;color:var(--apple-muted);\'>HP</b>'"/></div><span class="brand-name">HP</span></div>
-          <div class="brand-card"><div class="brand-logo-placeholder"><img src="images/brands/dell.png" alt="Dell" onerror="this.parentElement.innerHTML='<b style=\'font-size:.75rem;color:var(--apple-muted);\'>DELL</b>'"/></div><span class="brand-name">Dell</span></div>
-          <div class="brand-card"><div class="brand-logo-placeholder"><img src="images/brands/asus.png" alt="Asus" onerror="this.parentElement.innerHTML='<b style=\'font-size:.75rem;color:var(--apple-muted);\'>ASUS</b>'"/></div><span class="brand-name">Asus</span></div>
+    <div class="brand-group">
+      <h3 class="brand-group__title">Hardware</h3>
+      <div class="brand-row">
+        <div class="brand-item">
+          <div class="brand-item__logo"><img src="images/brands/lenovo.svg" alt="" loading="lazy" width="64" height="64"></div>
+          <span class="brand-item__name">Lenovo</span>
+        </div>
+        <div class="brand-item">
+          <div class="brand-item__logo"><img src="images/brands/hp.svg" alt="" loading="lazy" width="64" height="64"></div>
+          <span class="brand-item__name">HP</span>
+        </div>
+        <div class="brand-item">
+          <div class="brand-item__logo"><img src="images/brands/dell.svg" alt="" loading="lazy" width="64" height="64"></div>
+          <span class="brand-item__name">Dell</span>
+        </div>
+        <div class="brand-item">
+          <div class="brand-item__logo"><img src="images/brands/asus.svg" alt="" loading="lazy" width="64" height="64"></div>
+          <span class="brand-item__name">Asus</span>
         </div>
       </div>
-      <div>
-        <p class="brand-category-label">Software</p>
-        <div class="brands-row">
-          <div class="brand-card"><div class="brand-logo-placeholder"><img src="images/brands/microsoft.png" alt="Microsoft" onerror="this.parentElement.innerHTML='<b style=\'font-size:.65rem;color:var(--apple-muted);\'>MICROSOFT</b>'"/></div><span class="brand-name">Microsoft</span></div>
-          <div class="brand-card"><div class="brand-logo-placeholder"><img src="images/brands/adobe.png" alt="Adobe" onerror="this.parentElement.innerHTML='<b style=\'font-size:.75rem;color:var(--apple-muted);\'>ADOBE</b>'"/></div><span class="brand-name">Adobe</span></div>
-          <div class="brand-card"><div class="brand-logo-placeholder"><img src="images/brands/vmware.png" alt="VMware" onerror="this.parentElement.innerHTML='<b style=\'font-size:.75rem;color:var(--apple-muted);\'>VMWARE</b>'"/></div><span class="brand-name">VMware</span></div>
-          <div class="brand-card"><div class="brand-logo-placeholder"><img src="images/brands/acronis.png" alt="Acronis" onerror="this.parentElement.innerHTML='<b style=\'font-size:.75rem;color:var(--apple-muted);\'>ACRONIS</b>'"/></div><span class="brand-name">Acronis</span></div>
+    </div>
+    <div class="brand-group">
+      <h3 class="brand-group__title">Software</h3>
+      <div class="brand-row">
+        <div class="brand-item">
+          <div class="brand-item__logo"><img src="images/brands/microsoft.svg" alt="" loading="lazy" width="64" height="64"></div>
+          <span class="brand-item__name">Microsoft</span>
+        </div>
+        <div class="brand-item">
+          <div class="brand-item__logo"><img src="images/brands/adobe.svg" alt="" loading="lazy" width="64" height="64"></div>
+          <span class="brand-item__name">Adobe</span>
+        </div>
+        <div class="brand-item">
+          <div class="brand-item__logo"><img src="images/brands/vmware.svg" alt="" loading="lazy" width="64" height="64"></div>
+          <span class="brand-item__name">VMware</span>
+        </div>
+        <div class="brand-item">
+          <div class="brand-item__logo"><img src="images/brands/acronis.svg" alt="" loading="lazy" width="64" height="64"></div>
+          <span class="brand-item__name">Acronis</span>
         </div>
       </div>
-      <div>
-        <p class="brand-category-label">Seguridad</p>
-        <div class="brands-row">
-          <div class="brand-card"><div class="brand-logo-placeholder"><img src="images/brands/sophos.png" alt="Sophos" onerror="this.parentElement.innerHTML='<b style=\'font-size:.75rem;color:var(--apple-muted);\'>SOPHOS</b>'"/></div><span class="brand-name">Sophos</span></div>
-          <div class="brand-card"><div class="brand-logo-placeholder"><img src="images/brands/fortinet.png" alt="Fortinet" onerror="this.parentElement.innerHTML='<b style=\'font-size:.7rem;color:var(--apple-muted);\'>FORTINET</b>'"/></div><span class="brand-name">Fortinet</span></div>
-          <div class="brand-card"><div class="brand-logo-placeholder"><img src="images/brands/eset.png" alt="ESET" onerror="this.parentElement.innerHTML='<b style=\'font-size:.75rem;color:var(--apple-muted);\'>ESET</b>'"/></div><span class="brand-name">ESET</span></div>
-          <div class="brand-card"><div class="brand-logo-placeholder"><img src="images/brands/kaspersky.png" alt="Kaspersky" onerror="this.parentElement.innerHTML='<b style=\'font-size:.65rem;color:var(--apple-muted);\'>KASPERSKY</b>'"/></div><span class="brand-name">Kaspersky</span></div>
+    </div>
+    <div class="brand-group">
+      <h3 class="brand-group__title">Seguridad</h3>
+      <div class="brand-row">
+        <div class="brand-item">
+          <div class="brand-item__logo"><img src="images/brands/sophos.svg" alt="" loading="lazy" width="64" height="64"></div>
+          <span class="brand-item__name">Sophos</span>
+        </div>
+        <div class="brand-item">
+          <div class="brand-item__logo"><img src="images/brands/fortinet.svg" alt="" loading="lazy" width="64" height="64"></div>
+          <span class="brand-item__name">Fortinet</span>
+        </div>
+        <div class="brand-item">
+          <div class="brand-item__logo"><img src="images/brands/eset.svg" alt="" loading="lazy" width="64" height="64"></div>
+          <span class="brand-item__name">ESET</span>
+        </div>
+        <div class="brand-item">
+          <div class="brand-item__logo"><img src="images/brands/kaspersky.svg" alt="" loading="lazy" width="64" height="64"></div>
+          <span class="brand-item__name">Kaspersky</span>
         </div>
       </div>
-      <div>
-        <p class="brand-category-label">Networking</p>
-        <div class="brands-row">
-          <div class="brand-card"><div class="brand-logo-placeholder"><img src="images/brands/cisco.png" alt="Cisco" onerror="this.parentElement.innerHTML='<b style=\'font-size:.75rem;color:var(--apple-muted);\'>CISCO</b>'"/></div><span class="brand-name">Cisco</span></div>
-          <div class="brand-card"><div class="brand-logo-placeholder"><img src="images/brands/ubiquiti.png" alt="Ubiquiti" onerror="this.parentElement.innerHTML='<b style=\'font-size:.7rem;color:var(--apple-muted);\'>UBIQUITI</b>'"/></div><span class="brand-name">Ubiquiti</span></div>
-          <div class="brand-card"><div class="brand-logo-placeholder"><img src="images/brands/mikrotik.png" alt="Mikrotik" onerror="this.parentElement.innerHTML='<b style=\'font-size:.7rem;color:var(--apple-muted);\'>MIKROTIK</b>'"/></div><span class="brand-name">Mikrotik</span></div>
+    </div>
+    <div class="brand-group">
+      <h3 class="brand-group__title">Networking</h3>
+      <div class="brand-row">
+        <div class="brand-item">
+          <div class="brand-item__logo"><img src="images/brands/cisco.svg" alt="" loading="lazy" width="64" height="64"></div>
+          <span class="brand-item__name">Cisco</span>
+        </div>
+        <div class="brand-item">
+          <div class="brand-item__logo"><img src="images/brands/ubiquiti.svg" alt="" loading="lazy" width="64" height="64"></div>
+          <span class="brand-item__name">Ubiquiti</span>
+        </div>
+        <div class="brand-item">
+          <div class="brand-item__logo"><img src="images/brands/mikrotik.svg" alt="" loading="lazy" width="64" height="64"></div>
+          <span class="brand-item__name">Mikrotik</span>
         </div>
       </div>
+    </div>
+    <div class="center" style="margin-top:36px">
+      <a class="btn btn--outline" href="pages/marcas.html">Ver portafolio completo <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
     </div>
   </div>
 </section>
 
-<!-- ── CTA ── -->
-<section class="section-sm">
+<section class="section--sm">
   <div class="container">
-    <div class="cta-banner">
-      <h2 class="headline-lg" style="color:#f5f5f7;">¿Listo para el siguiente nivel?</h2>
-      <p class="body-lg" style="color:rgba(255,255,255,.45);margin-bottom:36px;">Uno de nuestros especialistas lo contactará para brindarle asesoría personalizada y sin compromiso.</p>
+    <div class="cta">
+      <h2 class="h-lg">Listo para el siguiente nivel.</h2>
+      <p>Uno de nuestros especialistas lo contactará para brindarle asesoría personalizada y sin compromiso.</p>
       <div class="cta-actions">
-        <a href="pages/contacto.html" class="btn btn-primary btn-lg">Solicitar Asesoría Gratuita</a>
-        <a href="pages/servicios.html" class="btn btn-white btn-lg">Ver Servicios</a>
+        <a class="btn btn--light btn--lg" href="pages/contacto.html">Solicitar asesoría gratuita</a>
+        <a class="btn btn--outline-light btn--lg" href="pages/servicios.html">Ver servicios</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ── FOOTER ── -->
+</main>
 <footer class="site-footer">
   <div class="container">
     <div class="footer-grid">
-      <div>
-        <div class="footer-logo"><img src="images/logo.png" alt="MG Soluciones Tecnológicas" /></div>
-        <p class="footer-desc">Empresa colombiana especializada en consultoría, infraestructura tecnológica, ciberseguridad y soporte para empresas.</p>
-        <div class="footer-social">
-          <a href="#" class="social-link" aria-label="LinkedIn">in</a>
-          <a href="#" class="social-link" aria-label="Facebook">f</a>
-          <a href="#" class="social-link" aria-label="Instagram">ig</a>
+      <div class="footer-brand">
+        <a href="index.html"><img src="images/logo.png" alt="MG Soluciones Tecnológicas" width="300" height="86"></a>
+        <p>Empresa colombiana especializada en consultoría, infraestructura tecnológica, ciberseguridad y soporte para empresas.</p>
+        <div class="socials">
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05a3.74 3.74 0 0 1 3.37-1.85c3.6 0 4.27 2.37 4.27 5.46zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13M7.12 20.45H3.56V9h3.56zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85C2.38 3.92 3.89 2.38 7.15 2.23 8.42 2.17 8.8 2.16 12 2.16M12 0C8.74 0 8.33.01 7.05.07 2.7.27.27 2.69.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.2 4.36 2.62 6.78 6.98 6.98C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c4.35-.2 6.78-2.62 6.98-6.98.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.2-4.35-2.62-6.78-6.98-6.98C15.67.01 15.26 0 12 0m0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32M12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8m6.41-11.85a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88"/></svg></a>
         </div>
       </div>
       <div class="footer-col">
-        <h5>Servicios</h5>
+        <h2>Servicios</h2>
         <ul>
           <li><a href="pages/servicios.html#consultoria">Consultoría TI</a></li>
           <li><a href="pages/servicios.html#ciberseguridad">Ciberseguridad</a></li>
           <li><a href="pages/servicios.html#infraestructura">Infraestructura</a></li>
           <li><a href="pages/servicios.html#soporte">Soporte</a></li>
-          <li><a href="pages/servicios.html#hardware">Hardware y Software</a></li>
-          <li><a href="pages/servicios.html#cloud">Cloud y Backup</a></li>
+          <li><a href="pages/servicios.html#hardware">Hardware y software</a></li>
+          <li><a href="pages/servicios.html#cloud">Cloud y backup</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h5>Empresa</h5>
+        <h2>Empresa</h2>
         <ul>
-          <li><a href="pages/nosotros.html">Quiénes Somos</a></li>
-          <li><a href="pages/nosotros.html#mision">Misión y Visión</a></li>
+          <li><a href="pages/nosotros.html">Quiénes somos</a></li>
+          <li><a href="pages/nosotros.html#proposito">Misión y visión</a></li>
           <li><a href="pages/marcas.html">Marcas</a></li>
           <li><a href="pages/blog.html">Blog</a></li>
           <li><a href="pages/contacto.html">Contacto</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h5>Contacto</h5>
+        <h2>Contacto</h2>
         <ul>
-          <li><a href="tel:+57XXXXXXXXXX">+57 (XXX) XXX-XXXX</a></li>
-          <li><a href="mailto:info@mgsoluciones.com">info@mgsoluciones.com</a></li>
-          <li><a href="#">Bogotá, Colombia</a></li>
-          <li><a href="https://wa.me/573138039679">WhatsApp</a></li>
+          <li><a href="tel:+573138039679">+57 313 803 9679</a></li>
+          <li><a href="mailto:iamartinezg@mgserviciosti.com">iamartinezg@mgserviciosti.com</a></li>
+          <li><a href="https://wa.me/573138039679?text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20sus%20servicios." target="_blank" rel="noopener">WhatsApp</a></li>
+          <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Carrera+109A+%23151-09%2C+Bogot%C3%A1%2C+Colombia" target="_blank" rel="noopener">Cra. 109A #151-09, Bogotá</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2025 MG Soluciones Tecnológicas. Todos los derechos reservados.</p>
-      <div class="footer-bottom-links">
-        <a href="#">Política de Privacidad</a>
-        <a href="#">Términos y Condiciones</a>
-      </div>
+      <p>&copy; <span data-year>2026</span> MG Soluciones Tecnológicas. Todos los derechos reservados.</p>
+      <nav aria-label="Enlaces legales">
+        <a href="#">Política de privacidad</a>
+        <a href="#">Términos y condiciones</a>
+      </nav>
     </div>
   </div>
 </footer>
 
-<a href="https://wa.me/573138039679" target="_blank" rel="noopener" class="whatsapp-float" aria-label="WhatsApp">
-  <span class="whatsapp-tooltip">¡Escríbenos!</span>
-  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+<a class="wa-float" href="https://wa.me/573138039679?text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20sus%20servicios." target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+  <span class="wa-float__label">Escríbenos por WhatsApp</span>
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
 </a>
 
-<script src="js/main.js"></script>
+<script src="js/main.js" defer></script>
 </body>
 </html>

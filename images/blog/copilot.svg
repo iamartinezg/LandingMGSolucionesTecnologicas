@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+<defs>
+<linearGradient id="g9" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0%" stop-color="#0071e3"/><stop offset="100%" stop-color="#0B1F35"/>
+</linearGradient>
+<pattern id="gridg9" width="40" height="40" patternUnits="userSpaceOnUse">
+<path d="M40 0 H0 V40" fill="none" stroke="#ffffff" stroke-opacity=".05" stroke-width="1"/>
+</pattern>
+</defs>
+<rect width="800" height="450" fill="url(#g9)"/>
+<rect width="800" height="450" fill="url(#gridg9)"/>
+
+<g transform="translate(400,225)">
+  <circle cx="0" cy="0" r="104" fill="none" stroke="#ffffff" stroke-width="3" opacity=".25"/>
+  <circle cx="0" cy="0" r="74"  fill="none" stroke="#ffffff" stroke-width="3" opacity=".4"/>
+  <circle cx="0" cy="0" r="46" fill="#ffffff" opacity=".95"/>
+  <path d="M0 -24 L7 -7 L24 0 L7 7 L0 24 L-7 7 L-24 0 L-7 -7 Z" fill="#0071e3"/>
+  <g fill="#ffffff">
+    <circle cx="0"   cy="-104" r="11"/><circle cx="90"  cy="52"  r="11"/>
+    <circle cx="-90" cy="52"   r="11"/>
+  </g>
+  <g fill="#5eb8ff" opacity=".85">
+    <path d="M132 -78 L137 -64 L151 -59 L137 -54 L132 -40 L127 -54 L113 -59 L127 -64 Z"/>
+    <path d="M-140 60 L-136 71 L-125 75 L-136 79 L-140 90 L-144 79 L-155 75 L-144 71 Z"/>
+  </g>
+</g>
+</svg>

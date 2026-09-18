@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+<defs>
+<linearGradient id="g5" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0%" stop-color="#107c10"/><stop offset="100%" stop-color="#0B3B5C"/>
+</linearGradient>
+<pattern id="gridg5" width="40" height="40" patternUnits="userSpaceOnUse">
+<path d="M40 0 H0 V40" fill="none" stroke="#ffffff" stroke-opacity=".05" stroke-width="1"/>
+</pattern>
+</defs>
+<rect width="800" height="450" fill="url(#g5)"/>
+<rect width="800" height="450" fill="url(#gridg5)"/>
+
+<g transform="translate(400,225)">
+  <rect x="-150" y="-108" width="300" height="216" rx="14" fill="#ffffff" opacity=".95"/>
+  <rect x="-150" y="-108" width="300" height="42" rx="14" fill="#0078d4"/>
+  <rect x="-150" y="-80" width="300" height="14" fill="#0078d4"/>
+  <circle cx="-128" cy="-87" r="6" fill="#fff" opacity=".8"/>
+  <circle cx="-108" cy="-87" r="6" fill="#fff" opacity=".55"/>
+  <g fill="#0B1F35" opacity=".2">
+    <rect x="-122" y="-42" width="200" height="12" rx="6"/>
+    <rect x="-122" y="-14" width="244" height="12" rx="6"/>
+    <rect x="-122" y="14"  width="170" height="12" rx="6"/>
+    <rect x="-122" y="42"  width="212" height="12" rx="6"/>
+  </g>
+  <g transform="translate(96,58)">
+    <path d="M0 -26 L7 -7 L26 0 L7 7 L0 26 L-7 7 L-26 0 L-7 -7 Z" fill="#7FBA00"/>
+    <path d="M22 -20 L25 -13 L32 -10 L25 -7 L22 0 L19 -7 L12 -10 L19 -13 Z" fill="#FFB900"/>
+  </g>
+</g>
+</svg>

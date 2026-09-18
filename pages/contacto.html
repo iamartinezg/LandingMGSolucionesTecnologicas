@@ -1,174 +1,205 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contacto — MG Soluciones Tecnológicas</title>
-  <meta name="description" content="Contáctenos para recibir asesoría tecnológica personalizada. Teléfono, correo, WhatsApp y formulario de contacto." />
-  <link rel="stylesheet" href="../css/styles.css" />
-  <link rel="icon" type="image/png" href="../images/logo.png" />
-  <style>
-    .faq-layout {
-      display: grid;
-      grid-template-columns: 1fr 1.4fr;
-      gap: 72px;
-      align-items: start;
-    }
-    @media (max-width: 860px) {
-      .faq-layout { grid-template-columns: 1fr; gap: 36px; }
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contacto — MG Soluciones Tecnológicas</title>
+<meta name="description" content="Contáctenos para recibir asesoría tecnológica personalizada. Teléfono +57 313 803 9679, WhatsApp, correo y formulario. Cra. 109A #151-09, Bogotá.">
+<meta name="theme-color" content="#0B1F35">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MG Soluciones Tecnológicas">
+<meta property="og:title" content="Contacto — MG Soluciones Tecnológicas">
+<meta property="og:description" content="Contáctenos para recibir asesoría tecnológica personalizada. Teléfono +57 313 803 9679, WhatsApp, correo y formulario. Cra. 109A #151-09, Bogotá.">
+<meta property="og:locale" content="es_CO">
+<link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32.png">
+<link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Saltar al contenido</a>
 <header class="site-header">
   <div class="container">
     <div class="header-inner">
-      <a href="../index.html" class="logo"><img src="../images/logo.png" alt="MG Soluciones Tecnológicas" /></a>
-      <nav class="nav-links">
-        <a href="../index.html">Inicio</a>
-        <a href="servicios.html">Servicios</a>
-        <a href="marcas.html">Marcas</a>
-        <a href="nosotros.html">Nosotros</a>
-        <a href="blog.html">Blog</a>
-        <a href="contacto.html" class="active">Contacto</a>
+      <a class="brand" href="../index.html" aria-label="MG Soluciones Tecnológicas, ir al inicio">
+        <img src="../images/logo.png" alt="MG Soluciones Tecnológicas" width="300" height="86">
+      </a>
+      <nav class="nav" aria-label="Navegación principal">
+      <a href="../index.html">Inicio</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="marcas.html">Marcas</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="blog.html">Blog</a>
+      <a href="contacto.html" aria-current="page">Contacto</a>
       </nav>
-      <a href="contacto.html" class="btn btn-primary nav-cta">Cotizar</a>
-      <button class="hamburger" aria-label="Menú" aria-expanded="false"><span></span><span></span><span></span></button>
+      <a class="btn btn--primary nav-cta" href="contacto.html">Cotizar</a>
+      <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menuMovil">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </div>
-  <nav class="mobile-nav">
-    <a href="../index.html">Inicio</a><a href="servicios.html">Servicios</a><a href="marcas.html">Marcas</a>
-    <a href="nosotros.html">Nosotros</a><a href="blog.html">Blog</a><a href="contacto.html">Contacto</a>
-    <a href="contacto.html" class="btn btn-primary">Solicitar Cotización</a>
-  </nav>
 </header>
-
-<div class="page-hero">
+<nav class="nav-mobile" id="menuMovil" aria-label="Navegación móvil">
+  <a href="../index.html">Inicio</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="marcas.html">Marcas</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="blog.html">Blog</a>
+      <a href="contacto.html" aria-current="page">Contacto</a>
+  <a class="btn btn--primary" href="contacto.html">Solicitar Cotización</a>
+</nav>
+<main id="main">
+<div class="page-head">
   <div class="container">
-    <div class="page-hero-inner">
-      <div class="breadcrumb"><a href="../index.html">Inicio</a><span>/</span><span style="color:rgba(255,255,255,.6);">Contacto</span></div>
-      <span class="page-hero-eyebrow">Hablemos</span>
-      <h1 class="page-hero-title">Estamos listos para ayudarle.</h1>
-      <p class="page-hero-sub">Cuéntenos sobre su necesidad y uno de nuestros especialistas se comunicará con usted a la brevedad.</p>
-    </div>
+    <nav class="crumbs" aria-label="Ruta de navegación">
+      <a href="../index.html">Inicio</a><span>/</span><span aria-current="page">Contacto</span>
+    </nav>
+    <h1 class="h-lg">Estamos listos para ayudarle.</h1>
+    <p>Cuéntenos sobre su necesidad y uno de nuestros especialistas se comunicará con usted a la brevedad.</p>
   </div>
 </div>
 
-<!-- CONTACTO PRINCIPAL -->
-<section class="section">
+<section class="section bg-white">
   <div class="container">
     <div class="contact-layout">
 
-      <!-- Info -->
       <div>
         <span class="eyebrow">Información de contacto</span>
-        <h2 class="headline-md" style="font-size:1.7rem;">Estamos a su disposición.</h2>
-        <p class="body-md" style="margin-bottom:8px;">Seleccione el canal que prefiera. Respondemos en menos de 24 horas hábiles.</p>
+        <h2 class="h-md">Elija el canal que prefiera.</h2>
+        <p class="body">Respondemos en menos de 24 horas hábiles.</p>
 
-        <div class="contact-info-item">
-          <div class="contact-info-icon">📞</div>
-          <div>
-            <h4>Teléfono</h4>
-            <p><a href="tel:+57XXXXXXXXXX" style="color:var(--apple-muted);">+57 (XXX) XXX-XXXX</a></p>
-            <p style="font-size:.78rem;margin-top:2px;">Lun – Vie · 8:00 am – 6:00 pm</p>
+        <div class="contact-list">
+          <div class="contact-item">
+            <div class="contact-item__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.2 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+            <div>
+              <h3>Teléfono</h3>
+              <a href="tel:+573138039679">+57 313 803 9679</a>
+              <small>Lunes a viernes · 8:00 a. m. – 6:00 p. m.</small>
+            </div>
           </div>
-        </div>
-        <div class="contact-info-item">
-          <div class="contact-info-icon">✉️</div>
-          <div>
-            <h4>Correo electrónico</h4>
-            <p><a href="mailto:info@mgsoluciones.com" style="color:var(--apple-muted);">info@mgsoluciones.com</a></p>
-            <p style="font-size:.78rem;margin-top:2px;">Respondemos en menos de 24 horas</p>
+
+          <div class="contact-item">
+            <div class="contact-item__icon contact-item__icon--wa">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+            </div>
+            <div>
+              <h3>WhatsApp</h3>
+              <a href="https://wa.me/573138039679?text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20sus%20servicios." target="_blank" rel="noopener">+57 313 803 9679</a>
+              <small>Atención ágil por mensaje directo</small>
+            </div>
           </div>
-        </div>
-        <div class="contact-info-item">
-          <div class="contact-info-icon">💬</div>
-          <div>
-            <h4>WhatsApp</h4>
-            <p><a href="https://wa.me/57XXXXXXXXXX" target="_blank" style="color:var(--apple-muted);">+57 (XXX) XXX-XXXX</a></p>
-            <p style="font-size:.78rem;margin-top:2px;">Atención ágil por mensaje directo</p>
+
+          <div class="contact-item">
+            <div class="contact-item__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg></div>
+            <div>
+              <h3>Correo electrónico</h3>
+              <a href="mailto:iamartinezg@mgserviciosti.com">iamartinezg@mgserviciosti.com</a>
+              <small>Respuesta en menos de 24 horas</small>
+            </div>
           </div>
-        </div>
-        <div class="contact-info-item">
-          <div class="contact-info-icon">📍</div>
-          <div>
-            <h4>Ubicación</h4>
-            <p>Bogotá, Colombia</p>
-            <p style="font-size:.78rem;margin-top:2px;">Atención presencial con cita previa</p>
+
+          <div class="contact-item">
+            <div class="contact-item__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+            <div>
+              <h3>Ubicación</h3>
+              <p>Cra. 109A #151-09<br>Bogotá, Colombia</p>
+              <small>Atención presencial con cita previa</small>
+            </div>
           </div>
         </div>
 
-        <!-- Mapa placeholder -->
-        <div class="map-placeholder">
-          <span class="map-placeholder-icon">📍</span>
-          <p style="font-size:.82rem;">Reemplazar con iframe de Google Maps</p>
+        <div class="map">
+          <iframe
+            title="Mapa con la ubicación de MG Soluciones Tecnológicas en Cra. 109A #151-09, Bogotá"
+            src="https://www.google.com/maps?q=Carrera+109A+%23151-09%2C+Bogot%C3%A1%2C+Colombia&amp;hl=es&amp;z=16&amp;output=embed"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
         </div>
+        <a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Carrera+109A+%23151-09%2C+Bogot%C3%A1%2C+Colombia" target="_blank" rel="noopener">Abrir en Google Maps</a>
       </div>
 
-      <!-- Formulario -->
-      <div class="contact-form-card">
+      <div class="form-card">
         <span class="eyebrow">Formulario de contacto</span>
-        <h3 style="font-size:1.2rem;font-weight:700;color:var(--apple-dark);letter-spacing:-.4px;margin-bottom:6px;">Solicite una asesoría.</h3>
-        <p class="body-md" style="margin-bottom:24px;">Complete el formulario y un especialista se comunicará con usted en menos de 24 horas.</p>
+        <h2 class="h-sm" style="margin-bottom:6px">Solicite una asesoría.</h2>
+        <p class="body" style="margin-bottom:22px">Complete el formulario y un especialista se comunicará con usted en menos de 24 horas hábiles.</p>
 
-        <div class="success-message" id="successMsg">✅ ¡Mensaje enviado! Nos comunicaremos con usted pronto.</div>
+        <div class="alert alert--ok" id="avisoOk" role="status">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          <span>Mensaje enviado correctamente. Nos comunicaremos con usted muy pronto.</span>
+        </div>
+        <div class="alert alert--err" id="avisoError" role="alert">
+          <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v5M12 16h.01"/></svg>
+          <span>No fue posible enviar el mensaje. Escríbanos por <a href="https://wa.me/573138039679" target="_blank" rel="noopener">WhatsApp</a> o a <a href="mailto:iamartinezg@mgserviciosti.com">iamartinezg@mgserviciosti.com</a>.</span>
+        </div>
 
-        <form id="contactForm" novalidate>
-          <div class="form-row">
-            <div class="form-group">
-              <label for="nombre">Nombre completo *</label>
-              <input type="text" id="nombre" name="nombre" placeholder="Juan García" required />
+        <form id="formContacto" action="https://formsubmit.co/ajax/iamartinezg@mgserviciosti.com" method="POST" novalidate>
+          <input type="hidden" name="_subject" value="Nueva solicitud desde el sitio web de MG Soluciones Tecnológicas">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none">
+
+          <div class="field-row">
+            <div class="field">
+              <label for="nombre">Nombre completo <span class="req" aria-hidden="true">*</span></label>
+              <input type="text" id="nombre" name="nombre" placeholder="Juan García" autocomplete="name" required
+                     data-msg="Por favor indique su nombre.">
             </div>
-            <div class="form-group">
+            <div class="field">
               <label for="empresa">Empresa</label>
-              <input type="text" id="empresa" name="empresa" placeholder="Mi Empresa S.A.S." />
+              <input type="text" id="empresa" name="empresa" placeholder="Mi Empresa S.A.S." autocomplete="organization">
             </div>
           </div>
-          <div class="form-row">
-            <div class="form-group">
-              <label for="email">Correo electrónico *</label>
-              <input type="email" id="email" name="email" placeholder="juan@empresa.com" required />
+
+          <div class="field-row">
+            <div class="field">
+              <label for="email">Correo electrónico <span class="req" aria-hidden="true">*</span></label>
+              <input type="email" id="email" name="email" placeholder="juan@empresa.com" autocomplete="email" required
+                     data-msg="Por favor indique su correo electrónico.">
             </div>
-            <div class="form-group">
+            <div class="field">
               <label for="telefono">Teléfono / WhatsApp</label>
-              <input type="tel" id="telefono" name="telefono" placeholder="+57 300 000 0000" />
+              <input type="tel" id="telefono" name="telefono" placeholder="300 000 0000" autocomplete="tel" inputmode="tel">
             </div>
           </div>
-          <div class="form-group">
+
+          <div class="field">
             <label for="servicio">Servicio de interés</label>
             <select id="servicio" name="servicio">
-              <option value="" disabled selected>Seleccione una opción…</option>
+              <option value="" selected disabled>Seleccione una opción…</option>
               <option>Consultoría TI</option>
               <option>Ciberseguridad</option>
-              <option>Infraestructura Tecnológica</option>
-              <option>Soporte y Mantenimiento</option>
-              <option>Venta de Hardware y Software</option>
-              <option>Cloud y Backup</option>
-              <option>Otro / No estoy seguro</option>
+              <option>Infraestructura tecnológica</option>
+              <option>Soporte y mantenimiento</option>
+              <option>Hardware y software</option>
+              <option>Cloud y backup</option>
+              <option>Aún no lo tengo claro</option>
             </select>
           </div>
-          <div class="form-group">
+
+          <div class="field">
             <label for="empleados">Tamaño de la empresa</label>
             <select id="empleados" name="empleados">
-              <option value="" disabled selected>Número de empleados…</option>
-              <option>1 – 10 empleados</option>
-              <option>11 – 50 empleados</option>
-              <option>51 – 200 empleados</option>
-              <option>Más de 200 empleados</option>
+              <option value="" selected disabled>Número de empleados…</option>
+              <option>1 – 10</option>
+              <option>11 – 50</option>
+              <option>51 – 200</option>
+              <option>Más de 200</option>
             </select>
           </div>
-          <div class="form-group">
-            <label for="mensaje">Cuéntenos su necesidad *</label>
-            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Describa brevemente qué necesita o el problema que desea resolver…" required></textarea>
+
+          <div class="field">
+            <label for="mensaje">Cuéntenos su necesidad <span class="req" aria-hidden="true">*</span></label>
+            <textarea id="mensaje" name="mensaje" rows="5" required
+              placeholder="Describa brevemente qué necesita o el problema que desea resolver…"
+              data-msg="Por favor describa brevemente su necesidad."></textarea>
           </div>
-          <button type="submit" class="btn btn-primary btn-lg form-submit">
-            Enviar Solicitud
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+
+          <button class="btn btn--primary btn--lg form-submit" type="submit">
+            Enviar solicitud <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </button>
-          <p style="font-size:.74rem;color:var(--apple-muted);text-align:center;margin-top:14px;font-weight:300;">
-            Al enviar, acepta nuestra <a href="#" style="color:var(--apple-blue);">Política de Privacidad</a>. Sus datos no serán compartidos con terceros.
-          </p>
+
+          <p class="form-legal">Al enviar este formulario acepta nuestra <a href="#">política de privacidad</a>. Sus datos se usan únicamente para atender su solicitud.</p>
         </form>
       </div>
 
@@ -176,64 +207,115 @@
   </div>
 </section>
 
-<!-- FAQ -->
 <section class="section bg-gray">
   <div class="container">
     <div class="faq-layout">
       <div>
         <span class="eyebrow">Preguntas frecuentes</span>
-        <h2 class="headline-md">¿Tiene alguna duda?</h2>
-        <p class="body-md" style="margin-bottom:28px;">Estas son las preguntas que más nos hacen nuestros clientes. Si no encuentra su respuesta, escríbanos directamente.</p>
-        <a href="https://wa.me/57XXXXXXXXXX" target="_blank" class="btn btn-primary">Preguntar por WhatsApp</a>
+        <h2 class="h-md">Resolvemos sus dudas.</h2>
+        <p class="body" style="margin-bottom:26px">Estas son las consultas que más recibimos. Si necesita información puntual sobre su caso, nuestro equipo está disponible para atenderle.</p>
+        <a class="btn btn--primary" href="https://wa.me/573138039679?text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20sus%20servicios." target="_blank" rel="noopener">Consultar por WhatsApp</a>
       </div>
       <div class="faq-list">
         <div class="faq-item">
-          <div class="faq-question">¿Cuánto tiempo tarda una implementación? <span class="faq-arrow">▼</span></div>
-          <div class="faq-answer">El tiempo varía según el alcance. Un diagnóstico tecnológico puede completarse en 1–2 semanas, mientras que proyectos de infraestructura complejos pueden tomar de 4 a 12 semanas. En la reunión inicial le entregamos un cronograma estimado.</div>
+          <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq1">
+            ¿Cuánto cuesta implementar una solución tecnológica?<svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-a" id="faq1" hidden>El costo depende del alcance, del estado actual de su infraestructura y de los objetivos que quiera alcanzar. Trabajamos con propuestas flexibles y ajustadas al tamaño de cada organización, de modo que la inversión siempre tenga un retorno claro. El primer paso es una asesoría gratuita en la que evaluamos su caso y le presentamos las alternativas disponibles.</div>
         </div>
         <div class="faq-item">
-          <div class="faq-question">¿Trabajan con empresas de cualquier tamaño? <span class="faq-arrow">▼</span></div>
-          <div class="faq-answer">Sí. Hemos trabajado con pequeñas empresas de 5 empleados hasta organizaciones de más de 500. Nuestras soluciones son escalables y se adaptan al presupuesto y necesidades de cada organización.</div>
+          <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq2">
+            ¿Con qué tipo de empresas trabajan?<svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-a" id="faq2" hidden>Atendemos organizaciones de distintos tamaños y sectores, desde empresas que están dando sus primeros pasos en digitalización hasta compañías que necesitan fortalecer su infraestructura o su postura de ciberseguridad. Nuestro enfoque consultivo nos permite adaptar cada solución al contexto real del cliente. Escríbanos y le contamos cómo podemos apoyarle.</div>
         </div>
         <div class="faq-item">
-          <div class="faq-question">¿Ofrecen soporte post-implementación? <span class="faq-arrow">▼</span></div>
-          <div class="faq-answer">Absolutamente. Contamos con planes de soporte técnico mensual que incluyen mesa de ayuda, soporte remoto y visitas en sitio. No desaparecemos tras finalizar el proyecto.</div>
+          <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq3">
+            ¿Ofrecen soporte después de la implementación?<svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-a" id="faq3" hidden>Sí. El acompañamiento no termina con la entrega del proyecto. Contamos con planes de soporte y mantenimiento que incluyen mesa de ayuda, atención remota y visitas en sitio, diseñados según la criticidad de su operación. Solicite una cotización y le detallamos las modalidades disponibles.</div>
         </div>
         <div class="faq-item">
-          <div class="faq-question">¿Cómo es el proceso para solicitar una cotización? <span class="faq-arrow">▼</span></div>
-          <div class="faq-answer">Complete el formulario o escríbanos por WhatsApp. Un especialista se comunicará para entender su necesidad, programar una reunión y enviarle una propuesta personalizada sin costo.</div>
+          <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq4">
+            ¿Cuánto tiempo toma un proyecto?<svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-a" id="faq4" hidden>Depende del tipo de solución. Algunas implementaciones se completan en pocos días y otras, de mayor complejidad, requieren varias semanas. Lo que sí garantizamos es un cronograma claro desde el inicio y comunicación constante durante todo el proceso. Agende una reunión y le damos un estimado concreto para su caso.</div>
         </div>
         <div class="faq-item">
-          <div class="faq-question">¿Trabajan solo en Bogotá? <span class="faq-arrow">▼</span></div>
-          <div class="faq-answer">Aunque nuestra oficina está en Bogotá, prestamos servicios a nivel nacional. Muchos servicios se gestionan remotamente y para proyectos que requieren presencia en sitio en otras ciudades, lo coordinamos con anticipación.</div>
+          <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq5">
+            ¿Atienden empresas fuera de Bogotá?<svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-a" id="faq5" hidden>Sí. Buena parte de nuestros servicios se gestionan de forma remota, lo que nos permite atender clientes en cualquier ciudad del país. Para proyectos que requieren presencia física, lo coordinamos con anticipación. Cuéntenos dónde está su empresa y buscamos la mejor forma de acompañarle.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq6">
+            ¿Trabajan con marcas específicas o son independientes?<svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-a" id="faq6" hidden>Somos aliados de varios fabricantes reconocidos, lo que nos permite ofrecer respaldo y garantía en cada implementación. Al mismo tiempo mantenemos independencia para recomendar la tecnología que mejor resuelva su necesidad, no la que más nos convenga vender. Contáctenos y evaluamos juntos las opciones para su organización.</div>
         </div>
       </div>
     </div>
   </div>
 </section>
-
+</main>
 <footer class="site-footer">
   <div class="container">
     <div class="footer-grid">
-      <div><div class="footer-logo"><img src="../images/logo.png" alt="MG Soluciones Tecnológicas" /></div><p class="footer-desc">Empresa colombiana especializada en consultoría, infraestructura tecnológica, ciberseguridad y soporte para empresas.</p><div class="footer-social"><a href="#" class="social-link">in</a><a href="#" class="social-link">f</a><a href="#" class="social-link">ig</a></div></div>
-      <div class="footer-col"><h5>Servicios</h5><ul><li><a href="servicios.html#consultoria">Consultoría TI</a></li><li><a href="servicios.html#ciberseguridad">Ciberseguridad</a></li><li><a href="servicios.html#infraestructura">Infraestructura</a></li><li><a href="servicios.html#soporte">Soporte</a></li><li><a href="servicios.html#cloud">Cloud y Backup</a></li></ul></div>
-      <div class="footer-col"><h5>Empresa</h5><ul><li><a href="nosotros.html">Quiénes Somos</a></li><li><a href="marcas.html">Marcas</a></li><li><a href="blog.html">Blog</a></li><li><a href="contacto.html">Contacto</a></li></ul></div>
-      <div class="footer-col"><h5>Contacto</h5><ul><li><a href="tel:+57XXXXXXXXXX">+57 (XXX) XXX-XXXX</a></li><li><a href="mailto:info@mgsoluciones.com">info@mgsoluciones.com</a></li><li><a href="#">Bogotá, Colombia</a></li></ul></div>
+      <div class="footer-brand">
+        <a href="../index.html"><img src="../images/logo.png" alt="MG Soluciones Tecnológicas" width="300" height="86"></a>
+        <p>Empresa colombiana especializada en consultoría, infraestructura tecnológica, ciberseguridad y soporte para empresas.</p>
+        <div class="socials">
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05a3.74 3.74 0 0 1 3.37-1.85c3.6 0 4.27 2.37 4.27 5.46zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13M7.12 20.45H3.56V9h3.56zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85C2.38 3.92 3.89 2.38 7.15 2.23 8.42 2.17 8.8 2.16 12 2.16M12 0C8.74 0 8.33.01 7.05.07 2.7.27.27 2.69.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.2 4.36 2.62 6.78 6.98 6.98C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c4.35-.2 6.78-2.62 6.98-6.98.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.2-4.35-2.62-6.78-6.98-6.98C15.67.01 15.26 0 12 0m0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32M12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8m6.41-11.85a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h2>Servicios</h2>
+        <ul>
+          <li><a href="servicios.html#consultoria">Consultoría TI</a></li>
+          <li><a href="servicios.html#ciberseguridad">Ciberseguridad</a></li>
+          <li><a href="servicios.html#infraestructura">Infraestructura</a></li>
+          <li><a href="servicios.html#soporte">Soporte</a></li>
+          <li><a href="servicios.html#hardware">Hardware y software</a></li>
+          <li><a href="servicios.html#cloud">Cloud y backup</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2>Empresa</h2>
+        <ul>
+          <li><a href="nosotros.html">Quiénes somos</a></li>
+          <li><a href="nosotros.html#proposito">Misión y visión</a></li>
+          <li><a href="marcas.html">Marcas</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2>Contacto</h2>
+        <ul>
+          <li><a href="tel:+573138039679">+57 313 803 9679</a></li>
+          <li><a href="mailto:iamartinezg@mgserviciosti.com">iamartinezg@mgserviciosti.com</a></li>
+          <li><a href="https://wa.me/573138039679?text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20sus%20servicios." target="_blank" rel="noopener">WhatsApp</a></li>
+          <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Carrera+109A+%23151-09%2C+Bogot%C3%A1%2C+Colombia" target="_blank" rel="noopener">Cra. 109A #151-09, Bogotá</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="footer-bottom"><p>© 2025 MG Soluciones Tecnológicas. Todos los derechos reservados.</p><div class="footer-bottom-links"><a href="#">Política de Privacidad</a><a href="#">Términos y Condiciones</a></div></div>
+    <div class="footer-bottom">
+      <p>&copy; <span data-year>2026</span> MG Soluciones Tecnológicas. Todos los derechos reservados.</p>
+      <nav aria-label="Enlaces legales">
+        <a href="#">Política de privacidad</a>
+        <a href="#">Términos y condiciones</a>
+      </nav>
+    </div>
   </div>
 </footer>
-<a href="https://wa.me/57XXXXXXXXXX" target="_blank" rel="noopener" class="whatsapp-float" aria-label="WhatsApp"><span class="whatsapp-tooltip">¡Escríbenos!</span><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
-<script src="../js/main.js"></script>
-<script>
-  document.querySelectorAll('.faq-question').forEach(q => {
-    q.addEventListener('click', () => {
-      const item = q.parentElement;
-      const wasOpen = item.classList.contains('open');
-      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
-      if (!wasOpen) item.classList.add('open');
-    });
-  });
-</script>
+
+<a class="wa-float" href="https://wa.me/573138039679?text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20sus%20servicios." target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+  <span class="wa-float__label">Escríbenos por WhatsApp</span>
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+</a>
+
+<script src="../js/main.js" defer></script>
 </body>
 </html>

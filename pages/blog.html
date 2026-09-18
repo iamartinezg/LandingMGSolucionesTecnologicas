@@ -1,178 +1,269 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Blog — MG Soluciones Tecnológicas</title>
-  <meta name="description" content="Artículos, guías y tendencias sobre ciberseguridad, infraestructura TI, Microsoft 365 y transformación digital." />
-  <link rel="stylesheet" href="../css/styles.css" />
-  <link rel="icon" type="image/png" href="../images/logo.png" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blog y recursos — MG Soluciones Tecnológicas</title>
+<meta name="description" content="Noticias y tendencias sobre ciberseguridad, infraestructura TI, Microsoft 365, redes y cloud computing para empresas en Colombia.">
+<meta name="theme-color" content="#0B1F35">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MG Soluciones Tecnológicas">
+<meta property="og:title" content="Blog y recursos — MG Soluciones Tecnológicas">
+<meta property="og:description" content="Noticias y tendencias sobre ciberseguridad, infraestructura TI, Microsoft 365, redes y cloud computing para empresas en Colombia.">
+<meta property="og:locale" content="es_CO">
+<link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32.png">
+<link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-
+<a class="skip-link" href="#main">Saltar al contenido</a>
 <header class="site-header">
   <div class="container">
     <div class="header-inner">
-      <a href="../index.html" class="logo"><img src="../images/logo.png" alt="MG Soluciones Tecnológicas" /></a>
-      <nav class="nav-links">
-        <a href="../index.html">Inicio</a>
-        <a href="servicios.html">Servicios</a>
-        <a href="marcas.html">Marcas</a>
-        <a href="nosotros.html">Nosotros</a>
-        <a href="blog.html" class="active">Blog</a>
-        <a href="contacto.html">Contacto</a>
+      <a class="brand" href="../index.html" aria-label="MG Soluciones Tecnológicas, ir al inicio">
+        <img src="../images/logo.png" alt="MG Soluciones Tecnológicas" width="300" height="86">
+      </a>
+      <nav class="nav" aria-label="Navegación principal">
+      <a href="../index.html">Inicio</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="marcas.html">Marcas</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="blog.html" aria-current="page">Blog</a>
+      <a href="contacto.html">Contacto</a>
       </nav>
-      <a href="contacto.html" class="btn btn-primary nav-cta">Cotizar</a>
-      <button class="hamburger" aria-label="Menú" aria-expanded="false"><span></span><span></span><span></span></button>
+      <a class="btn btn--primary nav-cta" href="contacto.html">Cotizar</a>
+      <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menuMovil">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </div>
-  <nav class="mobile-nav">
-    <a href="../index.html">Inicio</a><a href="servicios.html">Servicios</a><a href="marcas.html">Marcas</a>
-    <a href="nosotros.html">Nosotros</a><a href="blog.html">Blog</a><a href="contacto.html">Contacto</a>
-    <a href="contacto.html" class="btn btn-primary">Solicitar Cotización</a>
-  </nav>
 </header>
-
-<div class="page-hero">
+<nav class="nav-mobile" id="menuMovil" aria-label="Navegación móvil">
+  <a href="../index.html">Inicio</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="marcas.html">Marcas</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="blog.html" aria-current="page">Blog</a>
+      <a href="contacto.html">Contacto</a>
+  <a class="btn btn--primary" href="contacto.html">Solicitar Cotización</a>
+</nav>
+<main id="main">
+<div class="page-head">
   <div class="container">
-    <div class="page-hero-inner">
-      <div class="breadcrumb"><a href="../index.html">Inicio</a><span>/</span><span style="color:rgba(255,255,255,.6);">Blog</span></div>
-      <span class="page-hero-eyebrow">Recursos</span>
-      <h1 class="page-hero-title">Blog y Recursos.</h1>
-      <p class="page-hero-sub">Información, recomendaciones y tendencias sobre tecnología empresarial, ciberseguridad, infraestructura y transformación digital.</p>
-    </div>
+    <nav class="crumbs" aria-label="Ruta de navegación">
+      <a href="../index.html">Inicio</a><span>/</span><span aria-current="page">Blog</span>
+    </nav>
+    <h1 class="h-lg">Blog y recursos.</h1>
+    <p>Noticias verificadas y tendencias sobre ciberseguridad, infraestructura, redes, cloud y tecnología empresarial.</p>
   </div>
 </div>
 
-<section class="section">
+<section class="section bg-white">
   <div class="container">
 
-    <div class="blog-filters">
-      <button class="filter-btn active">Todos</button>
-      <button class="filter-btn">Ciberseguridad</button>
-      <button class="filter-btn">Infraestructura</button>
-      <button class="filter-btn">Microsoft 365</button>
-      <button class="filter-btn">Backup y Continuidad</button>
-      <button class="filter-btn">Transformación Digital</button>
-      <button class="filter-btn">Guías Gratuitas</button>
+    <div class="filters" role="group" aria-label="Filtrar publicaciones por categoría">
+      <button class="filter" type="button" data-filter="todos" aria-pressed="true">Todos</button>
+      <button class="filter" type="button" data-filter="ciberseguridad" aria-pressed="false">Ciberseguridad</button>
+      <button class="filter" type="button" data-filter="cloud" aria-pressed="false">Cloud</button>
+      <button class="filter" type="button" data-filter="microsoft" aria-pressed="false">Microsoft 365</button>
+      <button class="filter" type="button" data-filter="infraestructura" aria-pressed="false">Infraestructura</button>
+      <button class="filter" type="button" data-filter="redes" aria-pressed="false">Redes</button>
+      <button class="filter" type="button" data-filter="transformacion" aria-pressed="false">Transformación Digital</button>
     </div>
 
-    <div class="blog-main-grid">
+    <div class="post-grid">
+      <article class="post post--featured" data-cat="ciberseguridad">
+        <div class="post__media">
+          <img src="../images/blog/ransomware.svg" alt="" loading="lazy" width="800" height="450">
+          <span class="post__tag">Ciberseguridad</span>
+        </div>
+        <div class="post__body">
+          <p class="post__meta"><span class="post__date">Agosto 2026</span><span class="post__source">Infobae Colombia</span></p>
+          <h2>Ecopetrol confirma robo de información tras ciberataque del grupo de ransomware The Gentlemen</h2>
+          <p>Un atacante externo sustrajo información sensible de quince empresas del grupo. ColCERT atribuye a esta estructura más de 200 ataques en 50 países, cerca del 10 % de los incidentes de ransomware identificados globalmente.</p>
+          <a class="link-arrow" href="https://www.infobae.com/colombia/2026/08/03/ataque-cibernetico-contra-el-ministerio-de-justicia-se-reportan-fallas-en-algunos-servicios/" target="_blank" rel="noopener">Leer en Infobae Colombia</a>
+        </div>
+      </article>
+      <article class="post" data-cat="ciberseguridad">
+        <div class="post__media">
+          <img src="../images/blog/mintic.svg" alt="" loading="lazy" width="800" height="450">
+          <span class="post__tag">Ciberseguridad</span>
+        </div>
+        <div class="post__body">
+          <p class="post__meta"><span class="post__date">Abril 2026</span><span class="post__source">MinTIC</span></p>
+          <h3>Colombia redujo un 48 % los incidentes cibernéticos durante 2025</h3>
+          <p>El ColCERT pasó de gestionar 1.427 incidentes en 2024 a 697 en 2025, y amplió su vigilancia de 31 a cerca de 1.300 entidades en los 32 departamentos del país.</p>
+          <a class="link-arrow" href="https://www.mintic.gov.co/portal/715/w3-article-433511.html" target="_blank" rel="noopener">Leer en MinTIC</a>
+        </div>
+      </article>
+      <article class="post" data-cat="ciberseguridad">
+        <div class="post__media">
+          <img src="../images/blog/amenazas.svg" alt="" loading="lazy" width="800" height="450">
+          <span class="post__tag">Ciberseguridad</span>
+        </div>
+        <div class="post__body">
+          <p class="post__meta"><span class="post__date">Abril 2026</span><span class="post__source">Grupo Micronet</span></p>
+          <h3>Ciberseguridad en Colombia 2026: la ilusión de protección de las herramientas aisladas</h3>
+          <p>La mayoría de organizaciones no carece de herramientas, sino de integración y visibilidad. Un antivirus, un firewall y controles de correo que no se comunican dejan espacio para que las amenazas se muevan sin ser detectadas.</p>
+          <a class="link-arrow" href="https://blog.grupomicronet.com/es/c%C3%B3mo-est%C3%A1-la-ciberseguridad-en-colombia-en-2026" target="_blank" rel="noopener">Leer en Grupo Micronet</a>
+        </div>
+      </article>
+      <article class="post" data-cat="redes">
+        <div class="post__media">
+          <img src="../images/blog/redes.svg" alt="" loading="lazy" width="800" height="450">
+          <span class="post__tag">Redes</span>
+        </div>
+        <div class="post__body">
+          <p class="post__meta"><span class="post__date">Febrero 2026</span><span class="post__source">TecnoSeguro</span></p>
+          <h3>Colombia sigue entre los países más atacados de la región: 7.100 millones de intentos en un semestre</h3>
+          <p>El informe de amenazas de Fortinet confirma que la presión del cibercrimen persiste. Para 2026 se anticipan más ataques a la cadena de suministro y a entornos en la nube, APIs y servicios digitales críticos.</p>
+          <a class="link-arrow" href="https://www.tecnoseguro.com/analisis/seguridad-informatica/ciberataques-colombia-amenaza-digital" target="_blank" rel="noopener">Leer en TecnoSeguro</a>
+        </div>
+      </article>
+      <article class="post" data-cat="cloud|infraestructura">
+        <div class="post__media">
+          <img src="../images/blog/cloud.svg" alt="" loading="lazy" width="800" height="450">
+          <span class="post__tag">Cloud</span>
+        </div>
+        <div class="post__body">
+          <p class="post__meta"><span class="post__date">Mayo 2026</span><span class="post__source">eSystems Colombia</span></p>
+          <h3>Migrar a Azure permite reducir hasta un 80 % la necesidad de datacenter propio</h3>
+          <p>La nube de Microsoft integra más de 200 servicios y permite convertir costos Capex en Opex, desplegar máquinas virtuales en segundos y mantener la infraestructura actualizada sin inversión en hardware.</p>
+          <a class="link-arrow" href="https://esystems.com.co/servicios-cloud-azure/" target="_blank" rel="noopener">Leer en eSystems Colombia</a>
+        </div>
+      </article>
+      <article class="post" data-cat="microsoft|cloud">
+        <div class="post__media">
+          <img src="../images/blog/copilot.svg" alt="" loading="lazy" width="800" height="450">
+          <span class="post__tag">Microsoft 365</span>
+        </div>
+        <div class="post__body">
+          <p class="post__meta"><span class="post__date">Diciembre 2025</span><span class="post__source">Microsoft Source LATAM</span></p>
+          <h3>Microsoft 365 Copilot Business llega a las pequeñas empresas con precios preferenciales</h3>
+          <p>Microsoft habilitó precios especiales al combinar Copilot Business con los planes Microsoft 365 Business, con salvaguardas para que los datos sensibles no se expongan fuera de los límites de la organización.</p>
+          <a class="link-arrow" href="https://news.microsoft.com/source/latam/noticias-de-microsoft/microsoft-365-copilot-business-el-futuro-del-trabajo-para-las-pequenas-empresas/" target="_blank" rel="noopener">Leer en Microsoft Source LATAM</a>
+        </div>
+      </article>
+      <article class="post" data-cat="microsoft">
+        <div class="post__media">
+          <img src="../images/blog/microsoft.svg" alt="" loading="lazy" width="800" height="450">
+          <span class="post__tag">Microsoft 365</span>
+        </div>
+        <div class="post__body">
+          <p class="post__meta"><span class="post__date">2025</span><span class="post__source">Cosmo Consult</span></p>
+          <h3>Cinco actualizaciones de Microsoft 365 Copilot que cambian el trabajo diario</h3>
+          <p>Agentes creados directamente desde Copilot Chat, generación automática de notas del orador y fórmulas descritas en lenguaje natural dentro de Excel para la web reducen la fricción en tareas repetitivas.</p>
+          <a class="link-arrow" href="https://www.cosmoconsult.com/mx/insights/blog/las-5-actualizaciones-mas-potentes-de-microsoft-365-copilot-julio-2025" target="_blank" rel="noopener">Leer en Cosmo Consult</a>
+        </div>
+      </article>
+      <article class="post" data-cat="infraestructura">
+        <div class="post__media">
+          <img src="../images/blog/infraestructura.svg" alt="" loading="lazy" width="800" height="450">
+          <span class="post__tag">Infraestructura</span>
+        </div>
+        <div class="post__body">
+          <p class="post__meta"><span class="post__date">Noviembre 2025</span><span class="post__source">Forbes Colombia</span></p>
+          <h3>El 60 % de las empresas latinoamericanas no sobrevive a un ciberataque</h3>
+          <p>Mientras las organizaciones adoptan inteligencia artificial para protegerse, los atacantes la usan con igual o mayor efectividad. La resiliencia de la infraestructura marca la diferencia entre recuperarse o desaparecer.</p>
+          <a class="link-arrow" href="https://forbes.co/2025/11/04/tecnologia/60-de-empresas-en-latam-no-sobreviven-a-un-ciberataque" target="_blank" rel="noopener">Leer en Forbes Colombia</a>
+        </div>
+      </article>
+      <article class="post" data-cat="transformacion">
+        <div class="post__media">
+          <img src="../images/blog/transformacion.svg" alt="" loading="lazy" width="800" height="450">
+          <span class="post__tag">Transformación Digital</span>
+        </div>
+        <div class="post__body">
+          <p class="post__meta"><span class="post__date">Abril 2026</span><span class="post__source">Grupo Micronet</span></p>
+          <h3>De la protección perimetral a la seguridad centrada en el dato</h3>
+          <p>El enfoque de la ciberseguridad en Colombia está cambiando. Las organizaciones que pasen de un modelo reactivo a uno estratégico estarán mejor preparadas para proteger su operación y su reputación.</p>
+          <a class="link-arrow" href="https://blog.grupomicronet.com/es/panorama-de-la-ciberseguridad-en-colombia-riesgos-tendencias-y-desaf%C3%ADos-en-2026" target="_blank" rel="noopener">Leer en Grupo Micronet</a>
+        </div>
+      </article>
+      <p class="empty-state" id="sinResultados" hidden>No hay publicaciones en esta categoría por el momento.</p>
+    </div>
 
-      <!-- Destacado -->
-      <div class="blog-card-featured">
-        <div class="blog-featured-img">
-          <span class="blog-featured-img-icon">🔐</span>
-          <span class="blog-tag-apple">Ciberseguridad</span>
-        </div>
-        <div class="blog-featured-body">
-          <p class="blog-date">Mayo 2025</p>
-          <h2>Las 5 amenazas de ciberseguridad más frecuentes en empresas colombianas y cómo prevenirlas.</h2>
-          <p>El ransomware, el phishing y los ataques a credenciales son cada vez más comunes. Conozca las estrategias de protección que están implementando las empresas más preparadas del país.</p>
-          <a href="#" class="blog-read-more" style="margin-top:20px;">Leer artículo →</a>
-        </div>
+    <p class="body center" style="margin-top:36px;font-size:.8rem">
+      Las publicaciones enlazan a sus fuentes originales. MG Soluciones Tecnológicas no es autor de estos contenidos.
+    </p>
+  </div>
+</section>
+
+<section class="section--sm">
+  <div class="container">
+    <div class="cta">
+      <h2 class="h-lg">¿Su empresa está preparada?</h2>
+      <p>Agende una evaluación sin costo y descubra el estado real de su infraestructura y su seguridad.</p>
+      <div class="cta-actions">
+        <a class="btn btn--light btn--lg" href="contacto.html">Solicitar evaluación</a>
+        
       </div>
-
-      <div class="blog-card">
-        <div class="blog-img"><span class="blog-img-icon">☁️</span><span class="blog-tag-apple">Microsoft 365</span></div>
-        <div class="blog-body">
-          <p class="blog-date">Abril 2025</p>
-          <h3>Microsoft 365 para empresas: ¿Cuál plan necesita su organización?</h3>
-          <p>Comparamos los planes Business Basic, Standard y Premium para ayudarle a tomar la mejor decisión.</p>
-          <a href="#" class="blog-read-more">Leer artículo →</a>
-        </div>
-      </div>
-
-      <div class="blog-card">
-        <div class="blog-img"><span class="blog-img-icon">💾</span><span class="blog-tag-apple">Backup</span></div>
-        <div class="blog-body">
-          <p class="blog-date">Abril 2025</p>
-          <h3>La regla 3-2-1 del backup: cómo proteger sus datos empresariales.</h3>
-          <p>Una estrategia de respaldo bien diseñada puede ser la diferencia entre la recuperación rápida y la pérdida catastrófica.</p>
-          <a href="#" class="blog-read-more">Leer artículo →</a>
-        </div>
-      </div>
-
-      <div class="blog-card">
-        <div class="blog-img"><span class="blog-img-icon">🖥️</span><span class="blog-tag-apple">Infraestructura</span></div>
-        <div class="blog-body">
-          <p class="blog-date">Marzo 2025</p>
-          <h3>¿Cuándo es el momento de renovar la infraestructura tecnológica?</h3>
-          <p>Identificamos las señales de alerta que indican que sus equipos y servidores están afectando la productividad.</p>
-          <a href="#" class="blog-read-more">Leer artículo →</a>
-        </div>
-      </div>
-
-      <div class="blog-card">
-        <div class="blog-img"><span class="blog-img-icon">🛡️</span><span class="blog-tag-apple">Ciberseguridad</span></div>
-        <div class="blog-body">
-          <p class="blog-date">Marzo 2025</p>
-          <h3>¿Qué es el hardening de sistemas y por qué su empresa lo necesita?</h3>
-          <p>El hardening reduce significativamente la superficie de ataque de sus sistemas. Explicamos cómo implementarlo.</p>
-          <a href="#" class="blog-read-more">Leer artículo →</a>
-        </div>
-      </div>
-
-      <div class="blog-card">
-        <div class="blog-img"><span class="blog-img-icon">🚀</span><span class="blog-tag-apple">Transformación Digital</span></div>
-        <div class="blog-body">
-          <p class="blog-date">Febrero 2025</p>
-          <h3>Primeros pasos hacia la transformación digital en medianas empresas.</h3>
-          <p>La digitalización no tiene que ser costosa ni compleja. Una hoja de ruta práctica para comenzar el proceso.</p>
-          <a href="#" class="blog-read-more">Leer artículo →</a>
-        </div>
-      </div>
-
-      <div class="blog-card">
-        <div class="blog-img"><span class="blog-img-icon">📋</span><span class="blog-tag-apple">Guía Gratuita</span></div>
-        <div class="blog-body">
-          <p class="blog-date">Febrero 2025</p>
-          <h3>Checklist de seguridad informática para PyMEs: 20 controles esenciales.</h3>
-          <p>Descargue nuestra guía gratuita con los 20 controles de seguridad que toda PyME debería implementar.</p>
-          <a href="#" class="blog-read-more">Descargar guía →</a>
-        </div>
-      </div>
-
     </div>
   </div>
 </section>
 
-<!-- Newsletter -->
-<section class="section-sm section-gray">
-  <div class="container">
-    <div style="text-align:center;max-width:500px;margin:0 auto;">
-      <span class="eyebrow" style="display:block;text-align:center;">Newsletter</span>
-      <h2 class="headline-md">Reciba nuestros artículos.</h2>
-      <p class="body-md" style="margin-bottom:28px;">Suscríbase y reciba mensualmente contenido sobre tecnología empresarial, ciberseguridad y tendencias digitales.</p>
-      <div style="display:flex;gap:10px;max-width:420px;margin:0 auto;">
-        <input type="email" placeholder="su@empresa.com"
-          style="flex:1;padding:11px 14px;border-radius:var(--radius-pill);border:.5px solid rgba(0,0,0,.15);font-family:var(--font);font-size:.88rem;outline:none;background:var(--apple-white);" />
-        <a href="contacto.html" class="btn btn-primary">Suscribirse</a>
-      </div>
-    </div>
-  </div>
-</section>
-
+</main>
 <footer class="site-footer">
   <div class="container">
     <div class="footer-grid">
-      <div><div class="footer-logo"><img src="../images/logo.png" alt="MG Soluciones Tecnológicas" /></div><p class="footer-desc">Empresa colombiana especializada en consultoría, infraestructura tecnológica, ciberseguridad y soporte para empresas.</p><div class="footer-social"><a href="#" class="social-link">in</a><a href="#" class="social-link">f</a><a href="#" class="social-link">ig</a></div></div>
-      <div class="footer-col"><h5>Servicios</h5><ul><li><a href="servicios.html#consultoria">Consultoría TI</a></li><li><a href="servicios.html#ciberseguridad">Ciberseguridad</a></li><li><a href="servicios.html#infraestructura">Infraestructura</a></li><li><a href="servicios.html#soporte">Soporte</a></li><li><a href="servicios.html#cloud">Cloud y Backup</a></li></ul></div>
-      <div class="footer-col"><h5>Empresa</h5><ul><li><a href="nosotros.html">Quiénes Somos</a></li><li><a href="marcas.html">Marcas</a></li><li><a href="blog.html">Blog</a></li><li><a href="contacto.html">Contacto</a></li></ul></div>
-      <div class="footer-col"><h5>Contacto</h5><ul><li><a href="tel:+57XXXXXXXXXX">+57 (XXX) XXX-XXXX</a></li><li><a href="mailto:info@mgsoluciones.com">info@mgsoluciones.com</a></li><li><a href="#">Bogotá, Colombia</a></li></ul></div>
+      <div class="footer-brand">
+        <a href="../index.html"><img src="../images/logo.png" alt="MG Soluciones Tecnológicas" width="300" height="86"></a>
+        <p>Empresa colombiana especializada en consultoría, infraestructura tecnológica, ciberseguridad y soporte para empresas.</p>
+        <div class="socials">
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05a3.74 3.74 0 0 1 3.37-1.85c3.6 0 4.27 2.37 4.27 5.46zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13M7.12 20.45H3.56V9h3.56zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85C2.38 3.92 3.89 2.38 7.15 2.23 8.42 2.17 8.8 2.16 12 2.16M12 0C8.74 0 8.33.01 7.05.07 2.7.27.27 2.69.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.2 4.36 2.62 6.78 6.98 6.98C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c4.35-.2 6.78-2.62 6.98-6.98.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.2-4.35-2.62-6.78-6.98-6.98C15.67.01 15.26 0 12 0m0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32M12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8m6.41-11.85a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h2>Servicios</h2>
+        <ul>
+          <li><a href="servicios.html#consultoria">Consultoría TI</a></li>
+          <li><a href="servicios.html#ciberseguridad">Ciberseguridad</a></li>
+          <li><a href="servicios.html#infraestructura">Infraestructura</a></li>
+          <li><a href="servicios.html#soporte">Soporte</a></li>
+          <li><a href="servicios.html#hardware">Hardware y software</a></li>
+          <li><a href="servicios.html#cloud">Cloud y backup</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2>Empresa</h2>
+        <ul>
+          <li><a href="nosotros.html">Quiénes somos</a></li>
+          <li><a href="nosotros.html#proposito">Misión y visión</a></li>
+          <li><a href="marcas.html">Marcas</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2>Contacto</h2>
+        <ul>
+          <li><a href="tel:+573138039679">+57 313 803 9679</a></li>
+          <li><a href="mailto:iamartinezg@mgserviciosti.com">iamartinezg@mgserviciosti.com</a></li>
+          <li><a href="https://wa.me/573138039679?text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20sus%20servicios." target="_blank" rel="noopener">WhatsApp</a></li>
+          <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Carrera+109A+%23151-09%2C+Bogot%C3%A1%2C+Colombia" target="_blank" rel="noopener">Cra. 109A #151-09, Bogotá</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="footer-bottom"><p>© 2025 MG Soluciones Tecnológicas. Todos los derechos reservados.</p><div class="footer-bottom-links"><a href="#">Política de Privacidad</a><a href="#">Términos y Condiciones</a></div></div>
+    <div class="footer-bottom">
+      <p>&copy; <span data-year>2026</span> MG Soluciones Tecnológicas. Todos los derechos reservados.</p>
+      <nav aria-label="Enlaces legales">
+        <a href="#">Política de privacidad</a>
+        <a href="#">Términos y condiciones</a>
+      </nav>
+    </div>
   </div>
 </footer>
-<a href="https://wa.me/57XXXXXXXXXX" target="_blank" rel="noopener" class="whatsapp-float" aria-label="WhatsApp"><span class="whatsapp-tooltip">¡Escríbenos!</span><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
-<script src="../js/main.js"></script>
-<script>
-  document.querySelectorAll('.filter-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-    });
-  });
-</script>
+
+<a class="wa-float" href="https://wa.me/573138039679?text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20sus%20servicios." target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+  <span class="wa-float__label">Escríbenos por WhatsApp</span>
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+</a>
+
+<script src="../js/main.js" defer></script>
 </body>
 </html>

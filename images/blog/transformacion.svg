@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+<defs>
+<linearGradient id="g8" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0%" stop-color="#EF4923"/><stop offset="100%" stop-color="#0B1F35"/>
+</linearGradient>
+<pattern id="gridg8" width="40" height="40" patternUnits="userSpaceOnUse">
+<path d="M40 0 H0 V40" fill="none" stroke="#ffffff" stroke-opacity=".05" stroke-width="1"/>
+</pattern>
+</defs>
+<rect width="800" height="450" fill="url(#g8)"/>
+<rect width="800" height="450" fill="url(#gridg8)"/>
+
+<g transform="translate(400,235)">
+  <path d="M-200 80 L-100 20 L-20 60 L80 -40 L190 -100" fill="none" stroke="#ffffff"
+        stroke-width="7" stroke-linecap="round" stroke-linejoin="round" opacity=".95"/>
+  <path d="M150 -104 L196 -104 L196 -58" fill="none" stroke="#ffffff" stroke-width="7"
+        stroke-linecap="round" stroke-linejoin="round" opacity=".95"/>
+  <g fill="#0B1F35" stroke="#ffffff" stroke-width="5">
+    <circle cx="-100" cy="20"  r="13"/><circle cx="-20" cy="60" r="13"/>
+    <circle cx="80"   cy="-40" r="13"/>
+  </g>
+  <g fill="#ffffff" opacity=".25">
+    <rect x="-210" y="94" width="42" height="40" rx="6"/>
+    <rect x="-140" y="74" width="42" height="60" rx="6"/>
+    <rect x="-70"  y="54" width="42" height="80" rx="6"/>
+    <rect x="0"    y="24" width="42" height="110" rx="6"/>
+    <rect x="70"   y="-6" width="42" height="140" rx="6"/>
+    <rect x="140"  y="-46" width="42" height="180" rx="6"/>
+  </g>
+</g>
+</svg>
